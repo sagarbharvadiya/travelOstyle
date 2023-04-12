@@ -1,10 +1,9 @@
+import About from "./About";
 
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <About />
   );
 }
 
