@@ -1,10 +1,11 @@
-
+import React from "react";
+import Banner from "./Componants/Banner";
 
 function App() {
   return (
-    <div className="App">
-      Hello
-    </div>
+    <>
+      <Banner/>
+    </>
   );
 }
 
