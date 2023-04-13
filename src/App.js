@@ -1,13 +1,13 @@
 import TourCard from "./Components/TourCard";
-import About from "./About";
+import About from "./Components/About";
 function App() {
   return (
-    <div className="App">
+    <>
+      <TourCard />
+      <About />
+    </>
 
-      <TourCard/>
-        <About />
-    </div>
-   );
+  );
 }
 
 export default App;
