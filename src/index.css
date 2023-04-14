@@ -8,24 +8,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --gredient-color: #009ffd;
+}
 
 .same_width {
   margin: 0 10px;
+  width: 1250px;
 }
-*{
+* {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
-.banner-image img{
+
+/* banner css starts from here */
+.banner-image img {
   width: 100%;
-  height: 720px;
+  height: 620px;
   display: block;
 }
-.banner-container{
+.banner-container {
   position: relative;
 }
-.banner-title-folder{
+.banner-title-folder {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -34,7 +40,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.banner-left-section{
+.banner-left-section {
   width: 45%;
   background: rgba(255, 255, 255, 0.28);
   border-radius: 10px;
@@ -45,14 +51,14 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   gap: 246px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
 }
 .banner-title {
   font-size: 150px;
   width: 450px;
   margin-right: 0px;
   margin-left: auto;
-  background: url(/src/Componants/images/banner-image2.webp) 0 0 / cover no-repeat;
+  background: url(/src/images/banner-image2.webp) 0 0 / cover no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -66,17 +72,17 @@ body {
   display: flex;
   gap: 40px;
   max-width: 383px;
-  margin: 0px auto 0px auto;
+  margin: 0px auto 50px auto;
   color: white;
 }
-.banner-des-folder1 h2{
+.banner-des-folder1 h2 {
   font-size: 27px;
 }
-.banner-des-folder2 h2{
+.banner-des-folder2 h2 {
   font-size: 27px;
   margin-bottom: 5px;
 }
-.banner-des-folder2 p{
+.banner-des-folder2 p {
   font-size: 14px;
   line-height: 19px;
 }
@@ -85,6 +91,9 @@ body {
   display: flex;
   align-items: center;
 }
+/* banner end here */
+
+/* Tour Card css starts */
 .container {
   margin: 2rem;
   padding: 1rem;
@@ -94,60 +103,165 @@ body {
   flex-direction: row;
   gap: 20px;
 }
-
 .card-wrapper {
   width: 300px;
   height: 300px;
   overflow: hidden;
   box-shadow: 0px 0px 15px -5px;
 }
-
 .img-div {
   width: 100%;
   height: 225px;
   overflow: hidden;
 }
-
 .card-details {
   display: flex;
   flex-direction: column;
+  margin: 5px 10px 5px 10px;
+}
+.travel-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+/* About Us css starts */
 .about_us_wrapper {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
+.about_us_left {
+  width: 400px;
+}
 .about_us_wrapper img {
   width: 315px;
   max-width: 100%;
   height: 280px;
 }
-
 .about_us_content p {
   max-width: 300px;
-  text-align: justify;
   margin-left: 50px;
   line-height: 2;
   font-size: 18px;
 }
-
 .about_us_title h2 {
   font-size: 30px;
   font-weight: bold;
 }
-
 .about_us_title span {
   margin-top: 5px;
 }
-
 .about_us_right {
   position: relative;
 }
-
 .about_us_right img.image {
   position: absolute;
   bottom: -50%;
+  width: 315px;
   left: -60%;
+  height: 225px;
 }
+/* about us css ends */
+
+/* Contact Us Css starts */
+.book-tour-folder {
+  max-width: 1152px;
+  margin: 0px auto;
+  padding: 63px 17px;
+  background: url(./images/book-tour-background.jpg) 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 100px;
+}
+.book-tour-form {
+  max-width: 500px;
+  padding: 35px 25px 36px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 15px;
+  background-color: white;
+}
+.input-contenar {
+  display: flex;
+  gap: 20px;
+}
+.input-folder {
+  max-width: 215px;
+  position: relative;
+}
+.inner-input {
+  padding: 15px 0px 15px 20px;
+  font-size: 18px;
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #e6e2e3;
+  color: #757072;
+}
+.input-icons {
+  position: absolute;
+  top: 44%;
+  right: 6%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #0051ff;
+}
+.inner-Massege {
+  padding: 15px 0px 15px 20px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid #e6e2e3;
+  color: #757072;
+}
+.Book-tour-submit-btn-folder {
+  padding: 0px 0px;
+  justify-content: center;
+  gap: 14px;
+  border-radius: 15px;
+  border: 1px solid #e6e2e3;
+  width: 100%;
+  height: 50px;
+}
+.Book-tour-submit-btn-folder a {
+  text-decoration: none;
+  color: #1980f5;
+}
+.submit-btn {
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  width: 100%;
+}
+.submit-btn:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  transform: translateY(-0.1em);
+}
+
+.submit-btn:active {
+  box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+  transform: translateY(0em);
+}
+.book-tour-form h2 {
+  font-size: 48px;
+  color: #1e2c36;
+}
+.book-tour-form p {
+  font-size: 18px;
+  margin: -10px 0px 10px 0px;
+  color: #757072;
+}
+/* contact us css end */

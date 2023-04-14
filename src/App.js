@@ -1,13 +1,17 @@
 import React from "react";
-import Banner from "./Componants/Banner";
 import TourCard from "./Components/TourCard";
 import About from "./Components/About";
+import Banner from './Components/Banner';
+import ContactUs from "./Components/ContactUs";
+
+
 function App() {
   return (
     <>
      <Banner/>
       <TourCard />
       <About />
+      <ContactUs/>
     </>
   );
 }
