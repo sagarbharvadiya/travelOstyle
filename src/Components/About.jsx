@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import thailandImg from "../images/backpacker.jpg";
-import landmark from "../images/full-shot-travel.jpg";
 import client from "../Client";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 
