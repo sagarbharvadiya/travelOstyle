@@ -3,12 +3,13 @@ import TourCard from "./Components/TourCard";
 import About from "./Components/About";
 import Banner from './Components/Banner';
 import ContactUs from "./Components/ContactUs";
-
+import Header from "./Components/Header";
 
 function App() {
   return (
     <>
-     <Banner/>
+      <Header/>
+      <Banner/>
       <TourCard />
       <About />
       <ContactUs/>
