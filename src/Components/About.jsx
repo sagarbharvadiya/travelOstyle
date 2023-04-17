@@ -12,6 +12,7 @@ const About = () => {
       try {
         const response = await client.getEntries({
           content_type: "basicPage",
+          "sys.id":"77m64RFwCqZ6SzEDeM44n0",
         });
         console.log();
         console.log(response);
@@ -28,8 +29,10 @@ const About = () => {
     <>
       {entry.map((item) => {
         const { title, description, positionOfImage, subTitle } = item.fields;
-        {/* const imageUrl = item.fields.image.fields.file.url; */}
-        const richTextContent = documentToReactComponents(description)
+      //  const imageUrl = item.fields.image.fields.file.url;
+        const images = item.fields.image;
+       
+      const richTextContent = documentToReactComponents(description)
         const id = item.sys.id
         return (
           <React.Fragment key={id}>
@@ -41,15 +44,16 @@ const About = () => {
                     <span>{subTitle}</span>
                   </div>
                   <div className="about_us_content">
-                    <p>{richTextContent}</p>
+                   {richTextContent}
                   </div>
                 </div>
-                {/* <div className="about_us_right">
-                  <div className="about_us_image">
-                    <img src={imageUrl} alt="4873" />
-                    <img className="image" src={landmark} alt="travel" />
-                  </div>
-                </div> */}
+                <div className="about_us_right">
+                  { <div className="about_us_image">
+                  {images.map((image, index) => (
+                     <img key={index} src={image.fields.file.url} alt={`${index}`} />
+                  ))}
+                </div> }
+                </div>
               </div>
             </section>
           </React.Fragment>
