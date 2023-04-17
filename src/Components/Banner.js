@@ -55,6 +55,7 @@ function Banner(){
                                             <div className="banner-right-image" data-aos="fade-down" data-aos-delay="1500">
                                                 <img src={banner_world_image}/>
                                             </div>
+                                            
                                             <h2>{rightTitle}</h2>
                                         </div>
                                     </div>

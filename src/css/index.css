@@ -150,8 +150,8 @@ body {
   width: 455px;
   margin-right: 0px;
   margin-left: auto;
-  background: url(./images/banner-image2.webp) 0 0 / cover no-repeat;
-  -webkit-background-clip: text;
+  background: url(../images/banner-image2.webp) 0 0 / cover no-repeat;
+ background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: translateY(37px) !important;
   font-weight: 900;
@@ -304,7 +304,7 @@ body {
   max-width: 1152px;
   margin: 0px auto;
   padding: 50px 30px;
-  background: url(./images/book-tour-background.jpg) 0 0;
+  background: url('../images/book-tour-background.jpg') 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -497,7 +497,7 @@ body {
     width: 179px;
     transform: translateY(72px);
     font-weight: 900;
-    -webkit-background-clip: text;
+   background-clip: text;
     -webkit-text-fill-color: white;
   }
   .banner-right-section h2 {
