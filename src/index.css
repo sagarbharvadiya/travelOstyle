@@ -22,8 +22,17 @@ body {
   box-sizing: border-box;
 }
 
-/* Top header section start */
+
 .top-header-section{
+.banner-image img{
+  width: 100%;
+  height: 620px;
+  display: block;
+}
+.banner-container{
+  position: relative;
+}
+.banner-title-folder{
   position: absolute;
   top: 0%;
   left: 0%;
