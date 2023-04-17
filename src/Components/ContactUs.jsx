@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import emailjs from "@emailjs/browser";
 import {FaUserAlt} from 'react-icons/fa';
 import {MdEmail} from 'react-icons/md'
+import get_Inspired_image from "../images/contact-image.png";
 
 function ContactUs() {
   const [name, setName] = useState("");
@@ -145,6 +146,23 @@ function ContactUs() {
                 theme="dark"
               />
             </form>
+          </div>
+          <div className="Get-Inspired-to-The-Collaboration">
+            <div className="Get-Inspired-image">
+              <img src={get_Inspired_image}/>
+            </div>
+            <span>DOING GOOD, TOGETHER</span>
+            <h2>Get Inspired to The Collaboration</h2>
+            <div className="Get-Inspired-call-folder">
+              <div className="call-folder">
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#" className="call-btn">9987547773</a>
+              </div>
+              <div className="Appointment-folder">
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" className="Appointment-btn">Appointment</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
