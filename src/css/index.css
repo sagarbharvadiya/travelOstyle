@@ -201,7 +201,19 @@ body {
   margin-left: -74px;
   position: relative;
   z-index: 3;
+  /* animation: rotate-animation 15s infinite linear; */
 }
+/* @keyframes rotate-animation {
+  0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+} */
 /* banner end here */
 
 /* Tour Card css starts */
@@ -268,7 +280,7 @@ body {
   display: block;
 }
 .about_us_content p {
-  max-width: 300px;
+  max-width: 380px;
   margin-left: 50px;
   line-height: 2;
   font-size: 16px;
