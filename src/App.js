@@ -5,7 +5,6 @@ import Banner from './Components/Banner';
 import ContactUs from "./Components/ContactUs";
 import Header from "./Components/Header";
 
-
 function App() {
   return (
     <>

@@ -85,7 +85,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   gap: 246px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .banner-title {
   font-size: 141px;
@@ -227,7 +227,7 @@ body {
 .book-tour-folder {
   max-width: 1152px;
   margin: 0px auto;
-  padding: 63px 17px;
+  padding: 63px 30px;
   background: url(./images/book-tour-background.jpg) 0 0;
   background-repeat: no-repeat;
   background-size: cover;
