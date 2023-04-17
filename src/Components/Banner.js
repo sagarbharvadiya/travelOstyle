@@ -42,8 +42,8 @@ function Banner(){
                                     </div>
                                     <div className="banner-title-folder">
                                         <div className="banner-left-section" data-aos="fade-right" data-aos-delay="900">
-                                            <h2 className="banner-title" data-aos="fade-right" data-aos-delay="1000">{leftTitle}</h2>
-                                            <div className="banner-des-conatiner" data-aos="fade-right" data-aos-delay="1300">
+                                            <h2 className="banner-title" data-aos="fade-right" data-aos-delay="1100">{leftTitle}</h2>
+                                            <div className="banner-des-conatiner" data-aos="fade-right" data-aos-delay="1700">
                                                 <div className="banner-des-folder2">
                                                     <h2>{title}</h2>
                                                     <p>{description}</p>
@@ -51,8 +51,8 @@ function Banner(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="banner-right-section" data-aos="fade-left" data-aos-delay="1100">
-                                            <div className="banner-right-image" data-aos="fade-down" data-aos-delay="1200">
+                                        <div className="banner-right-section" data-aos="fade-left" data-aos-delay="1300">
+                                            <div className="banner-right-image" data-aos="fade-down" data-aos-delay="1500">
                                                 <img src={banner_world_image}/>
                                             </div>
                                             <h2>{rightTitle}</h2>
