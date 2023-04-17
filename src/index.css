@@ -71,6 +71,46 @@ body {
   margin: 0px 10px;
   color: white;
 }
+.top-header-section-folder{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  z-index: 3;
+}
+.top-header-wrapper-folder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+}
+.logo-folder h2{
+  font-size: 40px;
+  color: white;
+}
+.menu-folder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-folder li{
+  list-style: none;
+}
+.menu-folder li a{
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0px 10px;
+  color: white;
+}
+.show-btn{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  color: white;
+  font-size: 30px;
+  z-index: 4;
+  display: none;
+}
 /* Top header section end */
 
 /* banner css starts from here */
@@ -93,7 +133,8 @@ body {
 }
 .banner-left-section{
   width: 45%;
-  background: rgba(255, 255, 255, 0.28);
+  /* background: rgba(255, 255, 255, 0.28); */
+  background: rgb(237 237 237 / 28%);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.7px);
@@ -112,7 +153,7 @@ body {
   background: url(./images/banner-image2.webp) 0 0 / cover no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: translateY(27px);
+  transform: translateY(37px);
   font-weight: 900;
 }
 .banner-right-section h2 {
@@ -172,6 +213,7 @@ body {
   flex-direction: row;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .card-wrapper {
   width: 366px;
@@ -253,7 +295,7 @@ body {
 .book-tour-folder {
   max-width: 1152px;
   margin: 0px auto;
-  padding: 63px 30px;
+  padding: 50px 30px;
   background: url(./images/book-tour-background.jpg) 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,7 +304,7 @@ body {
 }
 .book-tour-form {
   max-width: 500px;
-  padding: 35px 25px 36px 25px;
+  padding: 42px 25px 37px 25px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -336,7 +378,6 @@ body {
   box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
   transform: translateY(-0.1em);
 }
-
 .submit-btn:active {
   box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
   transform: translateY(0em);
@@ -350,24 +391,112 @@ body {
   margin: -10px 0px 10px 0px;
   color: #757072;
 }
+.book-tour-section{
+  margin-bottom: 30px;
+}
+.Get-Inspired-to-The-Collaboration {
+  max-width: 1152px;
+  margin: 0px auto 0px auto;
+  text-align: center;
+  padding: 44px 0px;
+  margin-top: 40px;
+  border-radius: 11px;
+  background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
+  color: white;
+}
+.Get-Inspired-image img{
+  width: 159px;
+  margin-bottom: 19px;
+}
+.Get-Inspired-to-The-Collaboration span{
+  font-size: 19px;
+}
+.Get-Inspired-to-The-Collaboration h2{
+  font-size: 48px;
+  margin: 15px 0 25px;
+}
+.Get-Inspired-call-folder{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.call-folder, 
+.Appointment-folder{
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  font-size: 18px;
+  gap: 15px;
+  padding: 14px 20px;
+}
+.call-folder a, 
+.Appointment-folder a{
+  text-decoration: none;
+  color: #5468ff;
+}
+.call-btn, 
+.Appointment-btn{
+  color: black !important;
+}
 /* contact us css end */
 
 /* responsive start */
-/* @media only screen and (max-width: 768px) {
-  
-} */
+@media only screen and (max-width: 768px) {
+  .top-header-section{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+  }
+  .top-header-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .show-btn{
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+    font-size: 25px;
+    z-index: 6;
+    display: block;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 19px;
+  }
+  .menu li {
+    margin: 5px 0px;
+  }
+  .menu li a {
+    font-size: 29px;
+  }
+}
 @media only screen and (max-width: 767px) {
   .banner-title {
     font-size: 60px;
     width: 179px;
     transform: translateY(72px);
     font-weight: 900;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: white;
   }
   .banner-right-section h2 {
     font-size: 61px;
     width: 82px;
     transform: translateY(103px);
-    margin-left: -39px;
+    margin-left: -42px;
   }
   .banner-left-section {
     width: 51%;
@@ -395,6 +524,64 @@ body {
     bottom: 7%;
     left: 6%;
     width: 322px;
-  } 
+  }
+  .Tour-section h2 {
+    max-width: 100%;
+    text-align: center;
+  }
+  .book-tour-folder {
+    max-width: 336px;
+    margin: 0px auto;
+    padding: 43px 20px;
+    background-position: center;
+  }
+  .book-tour-form {
+    width: 295px;
+    padding: 35px 20px 20px 20px;
+    gap: 20px;
+  }
+  .book-tour-form h2 {
+    font-size: 35px;
+  }
+  .book-tour-form p {
+    font-size: 13px;
+  }
+  .input-contenar {
+    display: flex;
+    gap: 10px;
+  }
+  .inner-input {
+    padding: 14px 0px 14px 11px;
+    font-size: 12px;
+  }
+  .inner-Massege {
+    padding: 15px 0px 15px 20px;
+    font-size: 13px;
+  }
+  .submit-btn {
+    font-size: 16px;
+  }
+  .input-icons {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translateY(-50%);
+    font-size: 13px;
+  }
+  .show-btn{
+    font-size: 20px;
+  }
+  .menu li a {
+    font-size: 23px;
+  }
+  .menu li {
+    margin: 3px 0px;
+  }
+  .menu {
+    margin-top: 7px;
+  }
+  .logo h2 {
+    font-size: 32px;
+  }
 }
 /* responsive end */
