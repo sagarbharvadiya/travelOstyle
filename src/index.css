@@ -153,7 +153,7 @@ body {
   background: url(./images/banner-image2.webp) 0 0 / cover no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: translateY(37px);
+  transform: translateY(37px) !important;
   font-weight: 900;
 }
 .banner-right-section h2 {
@@ -161,7 +161,7 @@ body {
   width: 371px;
   text-align: end;
   color: white;
-  transform: translateY(102px);
+  transform: translateY(102px) !important;
   letter-spacing: 5px;
 }
 .banner-des-conatiner {
