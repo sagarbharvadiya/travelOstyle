@@ -155,11 +155,11 @@ function ContactUs() {
             <h2>Get Inspired to The Collaboration</h2>
             <div className="Get-Inspired-call-folder">
               <div className="call-folder">
-                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i className="fa-solid fa-phone"></i></a>
                 <a href="#" className="call-btn">9987547773</a>
               </div>
               <div className="Appointment-folder">
-                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
                 <a href="#" className="Appointment-btn">Appointment</a>
               </div>
             </div>

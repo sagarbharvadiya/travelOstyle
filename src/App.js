@@ -6,6 +6,7 @@ import ContactUs from "./Components/ContactUs";
 import Header from "./Components/Header";
 import './css/aos.css';
 
+
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       <TourCard />
       <About />
       <ContactUs/>
+   
     </>
   );
 }
