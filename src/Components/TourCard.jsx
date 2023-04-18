@@ -1,70 +1,87 @@
 import React from "react";
-import { AiFillCalendar } from "react-icons/ai";
 import { ImLocation2 } from "react-icons/im";
+import card_image1 from '../images/card-image1.webp';
+import card_image2 from '../images/card-image2.jpg';
+import card_image3 from '../images/card-image3.jpg';
 
 const TourCard = () => {
   return (
     <div className="Tour-section">
       <h2>Packages</h2>
+      <div className="tour-filter">
+        <button>All</button>
+        <button>Europe</button>
+        <button>US</button>
+        <button>Canada</button>
+      </div>
       <div className="container">
         <div className="card-wrapper">
           <img
-            src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
-            alt="image1"
-            className="img-div"
-          />
+            src={card_image1} alt="image1" className="img-div" />
           <div className="card-details">
             <div className="travel-info">
-              <span>
-                <ImLocation2 /> Bern , Switzerland
-              </span>
-              <span>$1800</span>
+              <span>Bern , Switzerland</span>
+              <p><ImLocation2 /> Europe</p>
             </div>
             <div className="stay-info">
-              <span>
-                <AiFillCalendar /> 10Days
-              </span>
+              <div className="price-folder">
+                <p>CULTURAL</p>
+                <p>RELAX <span>1</span></p>
+              </div>
+              <span className="card-price">$1800</span>
             </div>
+            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+               Quod harum magni tenetur
+            </p>
+            <a href="#" className="card-btn">DETAILS</a>
           </div>
         </div>
         <div className="card-wrapper">
           <img
-            src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+            src={card_image3}
             alt="image1"
             className="img-div"
           />
           <div className="card-details">
             <div className="travel-info">
-              <span>
-                <ImLocation2 /> Bern , Switzerland
-              </span>
-              <span>$1800</span>
+              <span>Bern , Switzerland</span>
+              <p><ImLocation2 /> Europe</p>
             </div>
             <div className="stay-info">
-              <span>
-                <AiFillCalendar /> 10Days
-              </span>
+              <div className="price-folder">
+                <p>CULTURAL</p>
+                <p>RELAX <span>1</span></p>
+              </div>
+              <span className="card-price">$1800</span>
             </div>
+            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+               Quod harum magni tenetur
+            </p>
+            <a href="#" className="card-btn">DETAILS</a>
           </div>
         </div>
         <div className="card-wrapper">
           <img
-            src="https://images.unsplash.com/photo-1518235506717-e1ed3306a89b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+            src={card_image2}
             alt="image1"
             className="img-div"
           />
           <div className="card-details">
             <div className="travel-info">
-              <span>
-                <ImLocation2 /> Bern , Switzerland
-              </span>
-              <span>$1800</span>
+              <span>Bern , Switzerland</span>
+              <p><ImLocation2 /> Europe</p>
             </div>
             <div className="stay-info">
-              <span>
-                <AiFillCalendar /> 10Days
-              </span>
+              <div className="price-folder">
+                <p>CULTURAL</p>
+                <p>RELAX <span>1</span></p>
+              </div>
+              <span className="card-price">$1800</span>
             </div>
+            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+               Quod harum magni tenetur
+            </p>
+            <a href="#" className="card-btn">DETAILS</a>
           </div>
         </div>
       </div>
