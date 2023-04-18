@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -8,6 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Poppins", sans-serif;
 }
+
 :root {
   --gredient-color: #009ffd;
 }
@@ -16,6 +18,7 @@ body {
   width: 1250px;
   margin: 0px auto;
 }
+
 * {
   margin: 0%;
   padding: 0%;
@@ -23,22 +26,25 @@ body {
 }
 
 
-.top-header-section{
+.top-header-section {
   position: absolute;
   top: 0%;
   left: 0%;
   right: 0%;
   z-index: 3;
 }
-.banner-image img{
+
+.banner-image img {
   width: 100%;
   height: 620px;
   display: block;
 }
-.banner-container{
+
+.banner-container {
   position: relative;
 }
-.banner-title-folder{
+
+.banner-title-folder {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -47,62 +53,74 @@ body {
   width: 100%;
   height: 100%;
 }
-.top-header-wrapper{
+
+.top-header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 40px;
 }
-.logo h2{
+
+.logo h2 {
   font-size: 40px;
   color: white;
 }
-.menu{
+
+.menu {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.menu li{
+
+.menu li {
   list-style: none;
 }
-.menu li a{
+
+.menu li a {
   font-size: 16px;
   text-decoration: none;
   margin: 0px 10px;
   color: white;
 }
-.top-header-section-folder{
+
+.top-header-section-folder {
   position: absolute;
   top: 0%;
   left: 0%;
   right: 0%;
   z-index: 3;
 }
-.top-header-wrapper-folder{
+
+.top-header-wrapper-folder {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 40px;
 }
-.logo-folder h2{
+
+.logo-folder h2 {
   font-size: 40px;
   color: white;
 }
-.menu-folder{
+
+.menu-folder {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.menu-folder li{
+
+.menu-folder li {
   list-style: none;
 }
-.menu-folder li a{
+
+.menu-folder li a {
   font-size: 16px;
   text-decoration: none;
   margin: 0px 10px;
   color: white;
 }
-.show-btn{
+
+.show-btn {
   position: absolute;
   top: 10%;
   right: 5%;
@@ -111,6 +129,7 @@ body {
   z-index: 4;
   display: none;
 }
+
 /* Top header section end */
 
 /* banner css starts from here */
@@ -119,10 +138,12 @@ body {
   height: 675px;
   display: block;
 }
-.banner-container{
+
+.banner-container {
   position: relative;
 }
-.banner-title-folder{
+
+.banner-title-folder {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -131,7 +152,8 @@ body {
   width: 100%;
   height: 100%;
 }
-.banner-left-section{
+
+.banner-left-section {
   width: 45%;
   /* background: rgba(255, 255, 255, 0.28); */
   background: rgb(237 237 237 / 28%);
@@ -145,6 +167,7 @@ body {
   gap: 246px;
   padding-bottom: 30px;
 }
+
 .banner-title {
   font-size: 141px;
   width: 455px;
@@ -157,6 +180,7 @@ body {
   transform: translateY(37px) !important;
   font-weight: 900;
 }
+
 .banner-right-section h2 {
   font-size: 141px;
   width: 371px;
@@ -165,6 +189,7 @@ body {
   transform: translateY(102px) !important;
   letter-spacing: 5px;
 }
+
 .banner-des-conatiner {
   display: flex;
   gap: 40px;
@@ -172,19 +197,23 @@ body {
   margin: 0px auto 0px auto;
   color: white;
 }
+
 .banner-des-folder1 h2 {
   font-size: 25px;
 }
+
 .banner-des-folder2 h2 {
   font-size: 25px;
   margin-bottom: 5px;
 }
+
 .banner-des-folder2 p {
   font-size: 13px;
   line-height: 19px;
   margin-bottom: 17px;
 }
-.banner-des-folder2 a{
+
+.banner-des-folder2 a {
   border: 1px solid;
   padding: 6px 14px;
   color: white;
@@ -192,11 +221,13 @@ body {
   font-size: 13px;
   border-radius: 7px;
 }
+
 .banner-right-section {
   width: 55%;
   display: flex;
   align-items: center;
 }
+
 .banner-right-image img {
   width: 143px;
   margin-left: -74px;
@@ -217,24 +248,29 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .card-wrapper {
   width: 366px;
   box-shadow: 0px 3px 13px #dddddd;
 }
+
 .img-div {
   width: 100%;
   height: 225px;
   overflow: hidden;
 }
+
 .img-div {
   width: 100%;
   height: auto;
 }
+
 .card-details {
   display: flex;
   flex-direction: column;
   padding: 26px 15px 40px 15px;
 }
+
 .travel-info {
   margin-bottom: 14px;
   font-size: 18px;
@@ -244,7 +280,8 @@ body {
   font-size: 15px !important;
   color: #676767;
 }
-.Tour-section{
+
+.Tour-section {
   padding: 70px 0px 50px 0px;
   max-width: 1172px;
   margin: 0px auto;
@@ -323,32 +360,76 @@ body {
   align-items: center;
   justify-content: space-around;
 }
+
 .about_us_left {
   width: 400px;
 }
+
 .about_us_wrapper img {
   width: 315px;
   max-width: 100%;
   height: 280px;
   display: block;
 }
+
 .about_us_content p {
   max-width: 380px;
   margin-left: 50px;
   line-height: 2;
   font-size: 16px;
 }
+
 .about_us_title h2 {
   font-size: 40px;
   font-weight: bold;
 }
+
 .about_us_title span {
   margin-top: 5px;
 }
-.about_us_right img:nth-child(2){
+
+/* .about_us_right img:nth-child(2) {
   position: relative;
   margin-top: -34%;
   margin-left: -30%;
+} */
+
+.about_us_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+}
+
+.about_us_image {
+  margin-left: 0%;
+}
+
+.about_us_left {
+  width: 740px;
+  background:#f9fbfc;
+  color: #535557;
+box-shadow:12px 7px 81px 0px #535557;
+  padding: 21px;
+  border-radius: 10px;
+  /* position: relative; */
+  position: absolute;
+  top: 12%;
+  left: 0;
+}
+.about_us_content p {
+  max-width: 100%;
+  width: 670px;
+  margin: auto;
+}
+.about_us_right img:nth-child(2) {
+  display: none;
+}
+.about_us_wrapper img {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 /* about us css ends */
 
@@ -363,6 +444,7 @@ body {
   background-attachment: fixed;
   margin-top: 100px;
 }
+
 .book-tour-form {
   max-width: 500px;
   padding: 42px 25px 37px 25px;
@@ -372,14 +454,17 @@ body {
   border-radius: 15px;
   background-color: white;
 }
+
 .input-contenar {
   display: flex;
   gap: 20px;
 }
+
 .input-folder {
   max-width: 215px;
   position: relative;
 }
+
 .inner-input {
   padding: 15px 0px 15px 20px;
   font-size: 18px;
@@ -388,6 +473,7 @@ body {
   border: 1px solid #e6e2e3;
   color: #757072;
 }
+
 .input-icons {
   position: absolute;
   top: 44%;
@@ -397,6 +483,7 @@ body {
   color: #0051ff;
   display: flex;
 }
+
 .inner-Massege {
   padding: 15px 0px 15px 20px;
   font-size: 18px;
@@ -404,6 +491,7 @@ body {
   border: 1px solid #e6e2e3;
   color: #757072;
 }
+
 .Book-tour-submit-btn-folder {
   padding: 0px 0px;
   justify-content: center;
@@ -413,10 +501,12 @@ body {
   width: 100%;
   height: 50px;
 }
+
 .Book-tour-submit-btn-folder a {
   text-decoration: none;
   color: #1980f5;
 }
+
 .submit-btn {
   font-size: 18px;
   display: inline-block;
@@ -435,26 +525,32 @@ body {
   transition: box-shadow 0.15s ease, transform 0.15s ease;
   width: 100%;
 }
+
 .submit-btn:hover {
   box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
   transform: translateY(-0.1em);
 }
+
 .submit-btn:active {
   box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
   transform: translateY(0em);
 }
+
 .book-tour-form h2 {
   font-size: 48px;
   color: #1e2c36;
 }
+
 .book-tour-form p {
   font-size: 18px;
   margin: -10px 0px 10px 0px;
   color: #757072;
 }
-.book-tour-section{
+
+.book-tour-section {
   margin-bottom: 30px;
 }
+
 .Get-Inspired-to-The-Collaboration {
   max-width: 1152px;
   margin: 0px auto 0px auto;
@@ -465,7 +561,8 @@ body {
   background: radial-gradient(100% 100% at 100% 0%, #89e5ff 0%, #5468ff 100%);
   color: white;
 }
-.Get-Inspired-image img{
+
+.Get-Inspired-image img {
   width: 159px;
   margin-bottom: 19px;
 }
@@ -476,13 +573,15 @@ body {
   font-size: 48px;
   margin: 15px 0 25px;
 }
-.Get-Inspired-call-folder{
+
+.Get-Inspired-call-folder {
   display: flex;
   justify-content: center;
   gap: 20px;
 }
-.call-folder, 
-.Appointment-folder{
+
+.call-folder,
+.Appointment-folder {
   background-color: #fff;
   border-radius: 12px;
   display: flex;
@@ -490,15 +589,18 @@ body {
   gap: 15px;
   padding: 14px 20px;
 }
-.call-folder a, 
-.Appointment-folder a{
+
+.call-folder a,
+.Appointment-folder a {
   text-decoration: none;
   color: #5468ff;
 }
-.call-btn, 
-.Appointment-btn{
+
+.call-btn,
+.Appointment-btn {
   color: black !important;
 }
+
 /* contact us css end */
 
 /* footer start */
@@ -568,7 +670,7 @@ body {
 
 /* responsive start */
 @media only screen and (max-width: 768px) {
-  .top-header-section{
+  .top-header-section {
     position: fixed;
     top: 0%;
     left: 0%;
@@ -582,12 +684,14 @@ body {
     align-items: center;
     z-index: 5;
   }
-  .top-header-wrapper{
+
+  .top-header-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .show-btn{
+
+  .show-btn {
     position: absolute;
     top: 3%;
     right: 3%;
@@ -596,34 +700,40 @@ body {
     z-index: 6;
     display: block;
   }
+
   .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 19px;
   }
+
   .menu li {
     margin: 5px 0px;
   }
+
   .menu li a {
     font-size: 29px;
   }
 }
+
 @media only screen and (max-width: 767px) {
   .banner-title {
     font-size: 60px;
     width: 179px;
     transform: translateY(72px);
     font-weight: 900;
-   background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: white;
   }
+
   .banner-right-section h2 {
     font-size: 61px;
     width: 82px;
     transform: translateY(8px) !important;
     margin-left: -42px;
   }
+
   .banner-left-section {
     width: 51%;
     display: flex;
@@ -632,30 +742,36 @@ body {
     gap: 0px;
     background: rgb(86 86 86 / 28%);
   }
+
   .banner-right-section {
     width: 49%;
     transform: translateY(-79px);
   }
+
   .banner-right-image img {
     width: 111px;
     transform: translateY(-112px) !important;
     margin-left: -60px;
   }
+
   .banner-image img {
     width: 100%;
     height: 640px;
     display: block;
   }
-  .banner-des-conatiner{
+
+  .banner-des-conatiner {
     position: absolute;
     bottom: 7%;
     left: 6%;
     width: 322px;
   }
+
   .Tour-section h2 {
     max-width: 100%;
     text-align: center;
   }
+
   .book-tour-folder {
     width: 366px;
     max-width: 100%;
@@ -663,32 +779,40 @@ body {
     padding: 40px 16px;
     background-position: center;
   }
+
   .book-tour-form {
     width: 327px;
     padding: 35px 20px 20px 20px;
     gap: 20px;
   }
+
   .book-tour-form h2 {
     font-size: 35px;
   }
+
   .book-tour-form p {
     font-size: 15px;
   }
+
   .input-contenar {
     display: flex;
     gap: 10px;
   }
+
   .inner-input {
     padding: 14px 0px 14px 11px;
     font-size: 13px;
   }
+
   .inner-Massege {
     padding: 15px 0px 15px 20px;
     font-size: 14px;
   }
+
   .submit-btn {
     font-size: 16px;
   }
+
   .input-icons {
     position: absolute;
     top: 50%;
@@ -696,25 +820,32 @@ body {
     transform: translateY(-50%);
     font-size: 15px;
   }
-  .show-btn{
+
+  .show-btn {
     font-size: 20px;
   }
+
   .menu li a {
     font-size: 23px;
   }
+
   .menu li {
     margin: 3px 0px;
   }
+
   .menu {
     margin-top: 7px;
   }
+
   .logo h2 {
     font-size: 32px;
   }
-  .about_us_wrapper{
+
+  .about_us_wrapper {
     display: block;
   }
-.same_width{
+
+  .same_width {
     width: 100%;
     margin: 0;
   }
@@ -724,10 +855,12 @@ body {
     margin: 0px;
     margin-bottom: 23px;
   }
-  .top-header-section-folder{
+
+  .top-header-section-folder {
     display: none;
   }
-  .about_us_right img:nth-child(2){
+
+  .about_us_right img:nth-child(2) {
     margin: 0px auto
   }
   .about_us_title h2 {
@@ -783,4 +916,80 @@ body {
     width: 100%;
   }
 }
+
 /* responsive end */
+
+
+.curtain {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.curtain__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.curtain__wrapper input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+
+.curtain__wrapper input[type=checkbox]:checked~div.curtain__panel--left {
+  transform: translateX(0);
+}
+
+.curtain__wrapper input[type=checkbox]:checked~div.curtain__panel--right {
+  transform: translateX(0);
+}
+
+.curtain__panel {
+  display: flex;
+  align-items: center;
+  background: orange;
+  color: #fff;
+  float: left;
+  position: relative;
+  width: 50%;
+  height: 100vh;
+  transition: all 1s ease-out;
+  z-index: 2;
+}
+
+.curtain__panel--left {
+  justify-content: flex-end;
+  transform: translateX(-100%);
+}
+
+.curtain__panel--right {
+  justify-content: flex-start;
+  transform: translateX(100%);
+}
+
+.curtain__content {
+  align-items: center;
+  background: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding: 1rem 0;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+}
+
+.curtain__content img {
+  width: 20%;
+}

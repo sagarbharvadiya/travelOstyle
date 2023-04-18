@@ -6,7 +6,7 @@ function Header(){
     const toggleModal = () => { sertModal(!modal) }
     return(
         <>
-        <a onClick={toggleModal} href="#" className="show-btn"><i class="fa-solid fa-bars"></i></a>
+        <a onClick={toggleModal} href="#" className="show-btn"><i className="fa-solid fa-bars"></i></a>
         {modal &&(
             <div className="top-header-section">
                 <div className="top-header-wrapper">
