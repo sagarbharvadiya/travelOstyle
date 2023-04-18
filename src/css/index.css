@@ -287,12 +287,12 @@ body {
   color: #676767;
 }
 .card-btn {
-  width: 95px;
+  /* width: 95px; */
   text-align: center;
   font-size: 15px;
   text-decoration: none;
   border-radius: 5px;
-  padding: 4px 0px;
+  padding: 10px 0px;
   color: white;
   background-color: #54b7d1;
 }
