@@ -147,7 +147,7 @@ function ContactUs() {
               />
             </form>
           </div>
-          <div className="Get-Inspired-to-The-Collaboration">
+          {/* <div className="Get-Inspired-to-The-Collaboration">
             <div className="Get-Inspired-image">
               <img src={get_Inspired_image}/>
             </div>
@@ -163,7 +163,7 @@ function ContactUs() {
                 <a href="#" className="Appointment-btn">Appointment</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
