@@ -4,6 +4,7 @@ import About from "./Components/About";
 import Banner from './Components/Banner';
 import ContactUs from "./Components/ContactUs";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import './css/aos.css';
 
 
@@ -15,7 +16,7 @@ function App() {
       <TourCard />
       <About />
       <ContactUs/>
-   
+      <Footer/>
     </>
   );
 }
