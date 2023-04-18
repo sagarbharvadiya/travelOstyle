@@ -13,8 +13,8 @@ body {
 }
 
 .same_width {
-  margin: 0 10px;
   width: 1250px;
+  margin: 0px auto;
 }
 * {
   margin: 0%;
