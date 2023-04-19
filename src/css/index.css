@@ -305,6 +305,7 @@ body {
 .tour-filter{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 22px;
   margin: 38px 0px 37px 0px;
 }
@@ -781,6 +782,14 @@ body {
   }
   .about_us_left {
     width: 100%;
+  }
+  .tour-filter button {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+  .tour-filter {
+    gap: 16px;
+    margin: 38px 0px 37px 0px;
   }
 }
 /* responsive end */
