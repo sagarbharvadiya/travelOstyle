@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import banner_world_image from '../images/travle3.png';
-import travelImage from '../images/airplanemoving-unscreen.gif'
+import banner_mobile from '../images/banner-mobile-image.jpg';
+import travelImage from '../images/ezgif.com-crop (1).gif'
 import client from '../Client';
 import Aos from 'aos'
 import NewBanner from "./NewBanner";
@@ -42,6 +42,9 @@ function Banner() {
                                     <div className="banner-container">
                                         <div className="banner-image">
                                             <img src={imageUrl} alt="banner-image" />
+                                        </div>
+                                        <div className="banner-image banner-mobile">
+                                            <img src={banner_mobile} alt="banner-image" />
                                         </div>
                                         <div className="banner-title-folder">
                                             <div className="banner-left-section" data-aos="fade-right" data-aos-delay="900">
