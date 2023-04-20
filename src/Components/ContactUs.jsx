@@ -4,7 +4,6 @@ import "react-toastify/dist/ReactToastify.css";
 // import emailjs from "@emailjs/browser";
 import {FaUserAlt} from 'react-icons/fa';
 import {MdEmail} from 'react-icons/md'
-import get_Inspired_image from "../images/contact-image.png";
 
 function ContactUs() {
   const [name, setName] = useState("");
