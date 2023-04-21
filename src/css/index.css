@@ -18,6 +18,8 @@ body {
 .same_width {
   margin: 90px auto 0px auto;
   width: 1154px;
+  margin: 90px auto 0px auto;
+  width: 1154px;
 }
 
 * {
@@ -160,6 +162,8 @@ body {
   /* background: rgba(255, 255, 255, 0.28); */
   /* background: rgb(237 237 237 / 28%); */
   background: rgb(237 237 237 / 7%);
+  /* background: rgb(237 237 237 / 28%); */
+  background: rgb(237 237 237 / 7%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.7px);
   -webkit-backdrop-filter: blur(8.7px);
@@ -247,12 +251,15 @@ body {
 /* Tour Card css starts */
 .container {
   /* padding: 1rem; */
+  /* padding: 1rem; */
   font-size: 1rem;
   font-weight: 600;
+  /* display: flex;
   /* display: flex;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap; */
   flex-wrap: wrap; */
 }
 
@@ -2116,24 +2123,5 @@ body {
 }
 
 .curtain__content img {
-  width: 100%;
-}
-.banner-right-image {
-  position: absolute;
-  top: 45%;
-  left: 5%;
-  right: 0%;
-  margin: auto;
-  transform: translateY(-50%);
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-}
-.banner-container{
-  position: relative;
-}
-.curtain__wrapper input[type=checkbox]:not(:checked)~div.banner-right-image {
-  opacity: 0;
-  transition: all 1s ease-out ;
->>>>>>> a268612dd8967ba9afbd885422b7aea6a90a8352
+  width: 20%;
 }

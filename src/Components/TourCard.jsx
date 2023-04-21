@@ -12,7 +12,7 @@ const TourCard = () => {
     arrows: true,
     infinite: true,
     speed: 500,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -60,126 +60,75 @@ const TourCard = () => {
         <button>Canada</button>
       </div>
       <div className="container">
-        <Slider {...settings}>
-          <div className="card-wrapper">
-            <img src={card_image1} alt="image1" className="img-div" />
-            <div className="card-details">
-              <div className="travel-info">
-                <div className="travel-place">
-                  <span>Bern , Switzerland</span>
-                  <p>
-                    <ImLocation2 /> Europe
-                  </p>
-                </div>
-                <div className="price-folder">
-                  <span className="card-price">$1800</span>
-                </div>
-              </div>
-              <p className="card-des">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                harum magni tenetur
-              </p>
-              <Link className="card-btn" to="/tour-details">
-                Details
-              </Link>
+        <div className="card-wrapper">
+          <img
+            src={card_image1} alt="image1" className="img-div" />
+          <div className="card-details">
+            <div className="travel-info">
+              <span>Bern , Switzerland</span>
+              <p><ImLocation2 /> Europe</p>
             </div>
-          </div>
-          <div className="card-wrapper">
-            <img src={card_image3} alt="image1" className="img-div" />
-            <div className="card-details">
-              <div className="travel-info">
-                <div className="travel-place">
-                  <span>Bern , Switzerland</span>
-                  <p>
-                    <ImLocation2 /> Europe
-                  </p>
-                </div>
-                <div className="price-folder">
-                  <span className="card-price">$1800</span>
-                </div>
+            <div className="stay-info">
+              <div className="price-folder">
+                <p>CULTURAL</p>
+                <p>RELAX <span>1</span></p>
               </div>
-              <div className="stay-info"></div>
-              <p className="card-des">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                harum magni tenetur
-              </p>
-              <Link className="card-btn" to="/tour-details">
-                Details
-              </Link>
+              <span className="card-price">$1800</span>
             </div>
+            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+               Quod harum magni tenetur
+            </p>
+            <a href="#" className="card-btn">DETAILS</a>
           </div>
-          <div className="card-wrapper">
-            <img src={card_image2} alt="image1" className="img-div" />
-            <div className="card-details">
-              <div className="travel-info">
-                <div className="travel-place">
-                  <span>Bern , Switzerland</span>
-                  <p>
-                    <ImLocation2 /> Europe
-                  </p>
-                </div>
-                <div className="price-folder">
-                  <span className="card-price">$1800</span>
-                </div>
+        </div>
+        <div className="card-wrapper">
+          <img
+            src={card_image3}
+            alt="image1"
+            className="img-div"
+          />
+          <div className="card-details">
+            <div className="travel-info">
+              <span>Bern , Switzerland</span>
+              <p><ImLocation2 /> Europe</p>
+            </div>
+            <div className="stay-info">
+              <div className="price-folder">
+                <p>CULTURAL</p>
+                <p>RELAX <span>1</span></p>
               </div>
-              <div className="stay-info"></div>
-              <p className="card-des">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                harum magni tenetur
-              </p>
-              <Link className="card-btn" to="/tour-details">
-                Details
-              </Link>
+              <span className="card-price">$1800</span>
             </div>
+            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+               Quod harum magni tenetur
+            </p>
+            <a href="#" className="card-btn">DETAILS</a>
           </div>
-          <div className="card-wrapper">
-            <img src={card_image1} alt="image1" className="img-div" />
-            <div className="card-details">
-              <div className="travel-info">
-                <div className="travel-place">
-                  <span>Bern , Switzerland</span>
-                  <p>
-                    <ImLocation2 /> Europe
-                  </p>
-                </div>
-                <div className="price-folder">
-                  <span className="card-price">$1800</span>
-                </div>
+        </div>
+        <div className="card-wrapper">
+          <img
+            src={card_image2}
+            alt="image1"
+            className="img-div"
+          />
+          <div className="card-details">
+            <div className="travel-info">
+              <span>Bern , Switzerland</span>
+              <p><ImLocation2 /> Europe</p>
+            </div>
+            <div className="stay-info">
+              <div className="price-folder">
+                <p>CULTURAL</p>
+                <p>RELAX <span>1</span></p>
               </div>
-              <div className="stay-info"></div>
-              <p className="card-des">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                harum magni tenetur
-              </p>
-              <Link className="card-btn" to="/tour-details">
-                Details
-              </Link>
+              <span className="card-price">$1800</span>
             </div>
+            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+               Quod harum magni tenetur
+            </p>
+            <a href="#" className="card-btn">DETAILS</a>
           </div>
-          <div className="card-wrapper">
-            <img src={card_image1} alt="image1" className="img-div" />
-            <div className="card-details">
-              <div className="travel-info">
-                <div className="travel-place">
-                  <span>Bern , Switzerland</span>
-                  <p>
-                    <ImLocation2 /> Europe
-                  </p>
-                </div>
-                <div className="price-folder">
-                  <span className="card-price">$1800</span>
-                </div>
-              </div>
-              <p className="card-des">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
-                harum magni tenetur
-              </p>
-              <Link className="card-btn" to="/tour-details">
-                Details
-              </Link>
-            </div>
-          </div>
-        </Slider>
+        </div>
       </div>
     </div>
   );
