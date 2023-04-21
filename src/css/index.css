@@ -18,9 +18,6 @@ body {
   margin: 90px auto 0px auto;
   width: 1154px;
 }
-html{
-  scroll-behavior: smooth;
-}
 
 * {
   margin: 0%;
@@ -291,10 +288,9 @@ html{
 }
 
 .Tour-section {
-  padding: 0px 0px 50px 0px;
+  padding: 70px 0px 50px 0px;
   max-width: 1154px;
   margin: 0px auto;
-  margin: 70px auto 0px auto;
 }
 .Tour-section h2 {
   font-size: 50px;
@@ -1053,49 +1049,5 @@ html{
 }
 
 .curtain__content img {
-  width: 100%;
-}
-.banner-right-image {
-  position: absolute;
-  top: 45%;
-  left: 5%;
-  right: 0%;
-  margin: auto;
-  transform: translateY(-50%);
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-}
-.banner-container{
-  position: relative;
-}
-.curtain__wrapper input[type=checkbox]:not(:checked)~div.banner-right-image {
-  opacity: 0;
-  transition: all 1s ease-out ;
-}
-.scroll-arrow{
-  position: absolute;
-  bottom: 6%;
-  left: 0%;
-  right: 0%;
-  margin: auto;
-  transform: translateY(-50%);
-  z-index: 13;
-  color: white;
-  font-size: 25px;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  animation: moving 3s infinite;
-}
-@keyframes moving{
-  0%{
-    transform: translateY(0px);
-  }
-  50%{
-    transform: translateY(10px);
-  }
-  100%{
-    transform: translateY(0px);
-  }
+  width: 20%;
 }

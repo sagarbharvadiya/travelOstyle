@@ -157,7 +157,6 @@ function Banner() {
                                             <h2>{rightTitle}</h2>
                                         </div>
                                     </div>
-                                    <a href="#scroll-down" className="scroll-arrow"><i class="fa-solid fa-angle-down"></i></a>
                                 </div>
                             </div>
                             <NewBanner />
