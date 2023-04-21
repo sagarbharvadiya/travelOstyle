@@ -1,0 +1,90 @@
+.detail-page-banner-img {
+  max-width: 100%;
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner2 {
+  width: 100%;
+  height: 410px;
+}
+.content-img {
+  width: 770px;
+  height: 460px;
+}
+.content-info {
+  width: 900px;
+  text-align: justify;
+}
+.tour-book-btn {
+  width: 200px;
+  color: white;
+  height: 30px;
+  background: #137deb;
+  border: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.tour-query-btn {
+  width: 200px;
+  color: white;
+  height: 30px;
+  background: #282a3c;
+  border: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.timeline-div {
+  display: flex;
+  flex-direction: row;
+  max-width: 1250px;
+  margin: 3rem;
+  padding: 1rem;
+}
+.timeline-left-div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 13%;
+}
+.sticky-top {
+  position: sticky;
+  /* top: 100px; */
+  margin-right: 30px;
+}
+.day-details-btn {
+  border-radius: 4px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 25px;
+  position: relative;
+  text-align: center;
+  background: #5191fa;
+}
+.timeline-right-div {
+  width: 83%;
+}
+.day-details-box {
+  display: flex;
+  flex-wrap: wrap;
+  background: #f5f5f5;
+  border: 1px solid #cee5f5;
+  border-radius: 4px;
+  padding: 30px;
+}
+.day-info {
+  width: 50%;
+}
+.day-info ul {
+  list-style-type: none;
+}
+.place-img {
+  width: 50%;
+}
+.place-img img {
+  width: 440px;
+  height: 315px;
+}

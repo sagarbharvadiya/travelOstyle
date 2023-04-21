@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react'
 
 const NewBanner = () => {
@@ -23,4 +24,5 @@ const NewBanner = () => {
     )
 }
 
+>>>>>>> a268612dd8967ba9afbd885422b7aea6a90a8352
 export default NewBanner
