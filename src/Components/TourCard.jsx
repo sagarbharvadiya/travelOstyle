@@ -50,7 +50,7 @@ const TourCard = () => {
     ],
   };
   return (
-    <div className="Tour-section">
+    <div className="Tour-section" id="scroll-down">
       <h2>Packages</h2>
       <div className="tour-filter">
         <button>All</button>
