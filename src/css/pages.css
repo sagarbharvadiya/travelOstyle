@@ -1,6 +1,11 @@
 .detail-page-banner-img {
   max-width: 100%;
 }
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .banner2 {
   width: 100%;
   height: 410px;

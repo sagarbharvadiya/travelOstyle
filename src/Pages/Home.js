@@ -3,7 +3,6 @@ import Banner from "../Components/Banner";
 import TourCard from "../Components/TourCard";
 import About from "../Components/About";
 import ContactUs from "../Components/ContactUs";
-import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
       <TourCard />
       <About />
       <ContactUs />
-      <Footer />
     </>
   );
 };

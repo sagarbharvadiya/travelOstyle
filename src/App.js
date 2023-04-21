@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import "./css/aos.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import TourcardDetails from "./Pages/TourcardDetails";
 
@@ -12,8 +13,9 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/tour-details" element={<TourcardDetails />} />
+          <Route exact path="/tour-details" element={<TourcardDetails />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );

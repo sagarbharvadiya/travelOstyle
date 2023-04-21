@@ -4,13 +4,9 @@ const NewBanner = () => {
     const [checked, setChecked] = useState(true);
     return (
         <>
-            <div className="curtain">
+            {/* <div className="curtain">
                 <div className="curtain__wrapper">
-                    <input
-                        type="checkbox"
-                        checked={checked}
-                        onChange={() => setChecked(!checked)}
-                    />
+                    <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)}/>
                     <div className="curtain__panel curtain__panel--left">
                         <h1>Click to reveal&nbsp;</h1>
                     </div>
@@ -21,9 +17,8 @@ const NewBanner = () => {
                     <div className="curtain__panel curtain__panel--right">
                         <h1>a special reward...</h1>
                     </div>
-
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
