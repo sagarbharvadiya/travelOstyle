@@ -1086,14 +1086,14 @@ html{
   display: flex;
   justify-content: center;
   text-decoration: none;
-  animation: moving 4s infinite;
+  animation: moving 3s infinite;
 }
 @keyframes moving{
   0%{
     transform: translateY(0px);
   }
   50%{
-    transform: translateY(15px);
+    transform: translateY(10px);
   }
   100%{
     transform: translateY(0px);
