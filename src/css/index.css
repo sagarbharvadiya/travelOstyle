@@ -18,7 +18,7 @@ body {
   margin: 90px auto 0px auto;
   width: 1154px;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -27,7 +27,6 @@ html{
   padding: 0%;
   box-sizing: border-box;
 }
-
 
 .top-header-section {
   position: absolute;
@@ -283,6 +282,8 @@ html{
 .travel-info {
   margin-bottom: 14px;
   font-size: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 .travel-info p {
   margin: 1px 0px 0px -4px;
@@ -302,35 +303,9 @@ html{
   margin: 0px 0px 26px 17px;
   color: #535557;
 }
-.stay-info{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 7px 0px 0px 0px;
-}
-.price-folder p {
-  font-size: 14px !important;
-  color: #676767;
-}
-.price-folder p:nth-child(2) {
-  margin-top: 2px !important;
-}
-.price-folder p span {
-  font-size: 9px !important;
-  padding: 0.8px 16px;
-  border-radius: 5px;
-  position: relative;
-  left: 8px;
-  background-color: #54b7d1;
-  color: white;
-}
-.card-price {
-  font-size: 24px !important;
-  color: #676767;
-}
 .card-des {
   font-size: 15px !important;
-  margin: 20px 0px 17px 0px !important;
+  margin: 14px 0px 14px 0px !important;
   color: #676767;
 }
 .card-btn {
@@ -343,10 +318,10 @@ html{
   color: white;
   background-color: #54b7d1;
 }
-.slick-slide:nth-child(odd) .card-wrapper .card-btn{
+.slick-slide:nth-child(odd) .card-wrapper .card-btn {
   background-color: #ec6170;
 }
-.slick-slide:nth-child(odd) .card-wrapper .price-folder p span{
+.slick-slide:nth-child(odd) .card-wrapper .price-folder p span {
   background-color: #ec6170;
 }
 .tour-filter {
@@ -355,7 +330,7 @@ html{
   gap: 22px;
   margin: 38px 0px 37px 10px;
 }
-.tour-filter button{
+.tour-filter button {
   padding: 9px 32px;
   font-size: 17px;
   border-radius: 6px;
@@ -372,11 +347,11 @@ html{
   left: 7px;
   top: 104%;
 }
-.Tour-section .container .slick-next{
+.Tour-section .container .slick-next {
   top: 104%;
   left: 70px;
 }
-.Tour-section .container .slick-next:before, 
+.Tour-section .container .slick-next:before,
 .Tour-section .container .slick-prev:before {
   font-size: 53px;
   line-height: 1;
@@ -464,7 +439,7 @@ html{
   max-width: 1152px;
   margin: 0px auto;
   padding: 50px 30px;
-  background: url('../images/book-tour-background.jpg') 0 0;
+  background: url("../images/book-tour-background.jpg") 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -553,7 +528,8 @@ html{
 }
 
 .submit-btn:hover {
-  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
   transform: translateY(-0.1em);
 }
 
@@ -592,10 +568,10 @@ html{
   width: 159px;
   margin-bottom: 19px;
 }
-.footer-background-folder span{
+.footer-background-folder span {
   font-size: 19px;
 }
-.footer-background-folder h2{
+.footer-background-folder h2 {
   font-size: 48px;
   margin: 15px 0 25px;
 }
@@ -643,7 +619,7 @@ html{
   font-size: 39px;
   margin: 10px 0px 50px 0px;
 }
-.footer-background-folder p{
+.footer-background-folder p {
   margin: 0px 0px 0px 0px;
   font-size: 19px;
 }
@@ -660,41 +636,41 @@ html{
   z-index: 12;
   background-color: white;
 }
-.footer-folder1 h2, 
-.footer-folder2 h2{
+.footer-folder1 h2,
+.footer-folder2 h2 {
   font-size: 23px;
   margin-bottom: 12px;
   color: #535557;
 }
-.footer-folder1 p{
+.footer-folder1 p {
   font-size: 13px;
   max-width: 325px;
   color: #757072;
 }
-.footer-folder2{
+.footer-folder2 {
   display: flex;
   flex-direction: column;
 }
-.footer-folder2 a{
+.footer-folder2 a {
   margin-bottom: 2px;
   color: #757072;
   text-decoration: none;
   font-size: 14px;
 }
-.footer-iocn{
+.footer-iocn {
   margin-top: 13px;
   display: flex;
   gap: 14px;
 }
-.footer-iocn a{
+.footer-iocn a {
   font-size: 21px;
   color: #757072;
 }
 /* footer end */
-.banner-section{
+.banner-section {
   overflow: hidden;
 }
-.banner-mobile{
+.banner-mobile {
   display: none;
 }
 
@@ -882,7 +858,7 @@ html{
     width: 100%;
     margin: 0;
   }
-  .about_us_wrapper img, 
+  .about_us_wrapper img,
   .about_us_title {
     width: 100%;
     margin: 0px;
@@ -893,7 +869,7 @@ html{
     display: none;
   }
   .about_us_right img:nth-child(2) {
-    margin: 0px auto
+    margin: 0px auto;
   }
   .about_us_title h2 {
     font-size: 32px;
@@ -913,10 +889,10 @@ html{
     width: 366px;
     margin: 0px auto;
   }
-  .about_us_right{
+  .about_us_right {
     margin-top: 29px;
   }
-  .call-folder, 
+  .call-folder,
   .Appointment-folder {
     font-size: 16px;
     width: 174px;
@@ -955,17 +931,18 @@ html{
     gap: 16px;
     margin: 38px 0px 37px 0px;
   }
-  .banner-image{
+  .banner-image {
     display: none !important;
   }
-  .banner-mobile{
+  .banner-mobile {
     display: block !important;
   }
   .Tour-section {
     padding: 45px 0px 50px 0px;
     max-width: 387px;
   }
-  .footer-folder1 h2, .footer-folder2 h2 {
+  .footer-folder1 h2,
+  .footer-folder2 h2 {
     font-size: 28px;
   }
   .footer-folder1 p {
@@ -982,7 +959,6 @@ html{
 
 /* responsive end */
 
-
 .curtain {
   margin: 0 auto;
   width: 100%;
@@ -996,7 +972,7 @@ html{
   position: relative;
 }
 
-.curtain__wrapper input[type=checkbox] {
+.curtain__wrapper input[type="checkbox"] {
   position: absolute;
   cursor: pointer;
   width: 100%;
@@ -1007,11 +983,11 @@ html{
   left: 0;
 }
 
-.curtain__wrapper input[type=checkbox]:checked~div.curtain__panel--left {
+.curtain__wrapper input[type="checkbox"]:checked ~ div.curtain__panel--left {
   transform: translateX(0);
 }
 
-.curtain__wrapper input[type=checkbox]:checked~div.curtain__panel--right {
+.curtain__wrapper input[type="checkbox"]:checked ~ div.curtain__panel--right {
   transform: translateX(0);
 }
 
@@ -1066,14 +1042,16 @@ html{
   display: flex;
   justify-content: center;
 }
-.banner-container{
+.banner-container {
   position: relative;
 }
-.curtain__wrapper input[type=checkbox]:not(:checked)~div.banner-right-image {
+.curtain__wrapper
+  input[type="checkbox"]:not(:checked)
+  ~ div.banner-right-image {
   opacity: 0;
-  transition: all 1s ease-out ;
+  transition: all 1s ease-out;
 }
-.scroll-arrow{
+.scroll-arrow {
   position: absolute;
   bottom: 6%;
   left: 0%;
@@ -1088,14 +1066,14 @@ html{
   text-decoration: none;
   animation: moving 3s infinite;
 }
-@keyframes moving{
-  0%{
+@keyframes moving {
+  0% {
     transform: translateY(0px);
   }
-  50%{
+  50% {
     transform: translateY(10px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }

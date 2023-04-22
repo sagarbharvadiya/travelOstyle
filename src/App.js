@@ -1,22 +1,22 @@
 import React from "react";
-import TourCard from "./Components/TourCard";
-import About from "./Components/About";
-import Banner from './Components/Banner';
-import ContactUs from "./Components/ContactUs";
-import Header from "./Components/Header";
 import Footer from "./Components/Footer";
-import './css/aos.css';
-
+import "./css/aos.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import TourcardDetails from "./Pages/TourcardDetails";
+import Home from "./Pages/Home";
+import Header from "./Components/Header";
 
 function App() {
   return (
     <>
-      <Header/>
-      <Banner/>
-      <TourCard />
-      <About />
-      <ContactUs/>
-      <Footer/>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/tour-details/:slug" element={<TourcardDetails />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
