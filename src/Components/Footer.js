@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Footer(){
     return(
@@ -19,39 +20,42 @@ function Footer(){
                             </div>
                         </div>
                     </div>
-                    <div className="footer-conatiner">
-                        <div className="footer-folder1">
-                            <h2>Travleostyle</h2>
-                            <p>internatios is international, non profit, professional organization founded
-                               by a group
-                            </p>
-                            <div className="footer-iocn">
-                                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <div className="footer-container-wrapper">
+                        <div className="footer-conatiner">
+                            <div className="footer-folder1">
+                                <h2>Travleostyle</h2>
+                                <p>internatios is international, non profit, professional organization founded
+                                   by a group
+                                </p>
+                                <div className="footer-iocn">
+                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div className="footer-folder2">
+                                <h2>Company</h2>
+                                <a href="#">Business</a>
+                                <a href="#">Compare</a>
+                                <a href="#">Feature</a>
+                                <a href="#">Pricing</a>
+                            </div>
+                            <div className="footer-folder2">
+                                <h2>Search Ride</h2>
+                                <a href="#">Business</a>
+                                <a href="#">Compare</a>
+                                <a href="#">Feature</a>
+                                <a href="#">Pricing</a>
+                            </div>
+                            <div className="footer-folder2">
+                                <h2>List a Ride</h2>
+                                <a href="#">Business</a>
+                                <a href="#">Compare</a>
+                                <a href="#">Feature</a>
+                                <a href="#">Pricing</a>
                             </div>
                         </div>
-                        <div className="footer-folder2">
-                            <h2>Company</h2>
-                            <a href="#">Business</a>
-                            <a href="#">Compare</a>
-                            <a href="#">Feature</a>
-                            <a href="#">Pricing</a>
-                        </div>
-                        <div className="footer-folder2">
-                            <h2>Search Ride</h2>
-                            <a href="#">Business</a>
-                            <a href="#">Compare</a>
-                            <a href="#">Feature</a>
-                            <a href="#">Pricing</a>
-                        </div>
-                        <div className="footer-folder2">
-                            <h2>List a Ride</h2>
-                            <a href="#">Business</a>
-                            <a href="#">Compare</a>
-                            <a href="#">Feature</a>
-                            <a href="#">Pricing</a>
-                        </div>
+                        <span>Copyright @ 2023 | <NavLink to="TermsCondition">Terms and conditions</NavLink> | <NavLink to="PrivacyPolicy">Privacy Policy</NavLink> | <NavLink to="RefundPolicy">Refund Policy</NavLink></span>
                     </div>
                 </div>
             </div>

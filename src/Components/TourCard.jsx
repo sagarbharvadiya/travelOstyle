@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { ImLocation2 } from "react-icons/im";
-import card_image1 from '../images/card-image1.webp';
-import card_image2 from '../images/card-image2.jpg';
-import card_image3 from '../images/card-image3.jpg';
+import card_image1 from "../images/card-image1.webp";
+import { Link } from "react-router-dom";
+import client from "../Client";
 
 const TourCard = () => {
   const settings = {
@@ -11,7 +11,7 @@ const TourCard = () => {
     arrows: true,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -49,6 +49,27 @@ const TourCard = () => {
       },
     ],
   };
+
+  const [entry, setEntry] = useState([]);
+
+  useEffect(() => {
+    const fetchPage = async () => {
+      try {
+        const response = await client.getEntries({
+          content_type: "package",
+        });
+        console.log(response);
+        if (response.items.length) {
+          setEntry(response.items);
+          console.log(response.items);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchPage();
+  }, []);
+
   return (
     <div className="Tour-section" id="scroll-down">
       <h2>Packages</h2>
@@ -59,75 +80,35 @@ const TourCard = () => {
         <button>Canada</button>
       </div>
       <div className="container">
-        <div className="card-wrapper">
-          <img
-            src={card_image1} alt="image1" className="img-div" />
-          <div className="card-details">
-            <div className="travel-info">
-              <span>Bern , Switzerland</span>
-              <p><ImLocation2 /> Europe</p>
-            </div>
-            <div className="stay-info">
-              <div className="price-folder">
-                <p>CULTURAL</p>
-                <p>RELAX <span>1</span></p>
+        <Slider {...settings}>
+          {entry.map((item) => {
+            const { slug, packageTitle, packageStartingPrice } = item.fields;
+            const id = item.fields.sys
+            return (
+              <div className="card-wrapper" key={id}>
+                <img src={card_image1} alt="image1" className="img-div" />
+                <div className="card-details">
+                  <div className="travel-info">
+                    <div className="travel-place">
+                      <span>{packageTitle}</span>
+                      <p>
+                        <ImLocation2 /> Europe
+                      </p>
+                    </div>
+                    <span className="card-price">${packageStartingPrice}</span>
+                  </div>
+                  <p className="card-des">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod harum magni tenetur
+                  </p>
+                  <Link to={`/tour-details/${slug}`} className="card-btn">
+                    Details
+                  </Link>
+                </div>
               </div>
-              <span className="card-price">$1800</span>
-            </div>
-            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-               Quod harum magni tenetur
-            </p>
-            <a href="#" className="card-btn">DETAILS</a>
-          </div>
-        </div>
-        <div className="card-wrapper">
-          <img
-            src={card_image3}
-            alt="image1"
-            className="img-div"
-          />
-          <div className="card-details">
-            <div className="travel-info">
-              <span>Bern , Switzerland</span>
-              <p><ImLocation2 /> Europe</p>
-            </div>
-            <div className="stay-info">
-              <div className="price-folder">
-                <p>CULTURAL</p>
-                <p>RELAX <span>1</span></p>
-              </div>
-              <span className="card-price">$1800</span>
-            </div>
-            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-               Quod harum magni tenetur
-            </p>
-            <a href="#" className="card-btn">DETAILS</a>
-          </div>
-        </div>
-        <div className="card-wrapper">
-          <img
-            src={card_image2}
-            alt="image1"
-            className="img-div"
-          />
-          <div className="card-details">
-            <div className="travel-info">
-              <span>Bern , Switzerland</span>
-              <p><ImLocation2 /> Europe</p>
-            </div>
-            <div className="stay-info">
-              <div className="price-folder">
-                <p>CULTURAL</p>
-                <p>RELAX <span>1</span></p>
-              </div>
-              <span className="card-price">$1800</span>
-            </div>
-            <p className="card-des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-               Quod harum magni tenetur
-            </p>
-            <a href="#" className="card-btn">DETAILS</a>
-          </div>
-        </div>
+            );
+          })}          
+        </Slider>
       </div>
     </div>
   );
