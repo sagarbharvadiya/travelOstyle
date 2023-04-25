@@ -44,7 +44,7 @@ function Banner() {
                                         <video className="banner-image curtain__content" controls="controls" autoplay="autoplay" muted="muted" loop>
                                             <source src={banner_video} type="video/mp4"/>
                                         </video>
-                                        <div className="banner-image banner-mobile urtain__content">
+                                        <div className="banner-image banner-mobile curtain__content">
                                             <img src={banner_mobile} alt="banner-image" />                                         </div>
                                         <div className="banner-left-section curtain__panel curtain__panel--left">
                                             <h2 className="banner-title">{leftTitle}</h2>

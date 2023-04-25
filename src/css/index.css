@@ -161,8 +161,6 @@ html {
 
 .banner-left-section {
   width: 45%;
-  /* background: rgba(255, 255, 255, 0.28); */
-  /* background: rgb(237 237 237 / 28%); */
   background: rgb(237 237 237 / 7%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.7px);
@@ -179,10 +177,6 @@ html {
   width: 455px;
   margin-right: 0px;
   margin-left: auto;
-  /* background: url(../images/banner-image3.jpeg) 0 0 / cover no-repeat;
-  background-position: 3px -31px;
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
   color: white;
   transform: translateY(37px) !important;
   font-weight: 900;
@@ -233,7 +227,6 @@ html {
   width: 55%;
   display: flex;
   align-items: center;
-  /* background: rgb(237 237 237 / 28%); */
   background: rgb(237 237 237 / 7%);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.7px);
@@ -281,7 +274,6 @@ html {
 .curtain__panel {
   display: flex;
   align-items: center;
-  /* background: orange; */
   color: #fff;
   float: left;
   position: relative;
@@ -351,31 +343,13 @@ html {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  /* animation: moving 3s infinite; */
 }
-/* @keyframes moving {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} */
 /* banner end here */
 
 /* Tour Card css starts */
 .container {
-  /* padding: 1rem; */
   font-size: 1rem;
   font-weight: 600;
-  /* display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap; */
 }
 
 .card-wrapper {
@@ -431,7 +405,6 @@ html {
   color: #676767;
 }
 .card-btn {
-  /* width: 95px; */
   text-align: center;
   font-size: 15px;
   text-decoration: none;
@@ -450,7 +423,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
-  margin: 30px 0px 37px 10px;
+  margin: 12px 0px 20px 10px;
 }
 .tour-filter button {
   padding: 9px 32px;
@@ -514,13 +487,6 @@ html {
   margin-top: 5px;
   font-weight: 600;
 }
-
-/* .about_us_right img:nth-child(2) {
-  position: relative;
-  margin-top: -34%;
-  margin-left: -30%;
-} */
-
 .about_us_wrapper {
   display: flex;
   align-items: center;
@@ -899,8 +865,20 @@ html {
 .banner-mobile {
   display: none;
 }
+.page-costa-rica-entry-r-equirements .logo-folder h2 , 
+.page-costa-rica-entry-r-equirements .menu-folder li a{
+  color: black !important;
+}
 
 /* responsive start */
+@media only screen and (min-width: 1400px){
+  .banner-title {
+    transform: translateY(-95px) !important;
+  }
+  .Tour-section {
+    padding: 20px 0px 50px 0px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .top-header-section {
     position: fixed;
@@ -953,7 +931,7 @@ html {
   .banner-title {
     font-size: 60px;
     width: 179px;
-    transform: translateY(72px);
+    transform: translateY(50px) !important;
     font-weight: 900;
     background-clip: text;
     -webkit-text-fill-color: white;
@@ -963,7 +941,7 @@ html {
     font-size: 61px;
     width: 82px;
     transform: translateY(0px) !important;
-    margin-left: -59px;
+    margin-left: 9px;
     font-weight: 900;
   }
 
@@ -979,24 +957,30 @@ html {
   .banner-right-section {
     width: 49%;
     transform: translateY(-79px);
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
   }
-
+  .curtain__wrapper input[type="checkbox"]{
+    display: none;
+  }
+  .banner-right-image {
+    position: absolute;
+    top: 33.6%;
+    left: 20%;
+  }
   .banner-right-image img {
     width: 144px;
-    transform: translateY(-113px) !important;
-    margin-left: -76px;
   }
 
   .banner-image img {
     width: 100%;
     height: 663px;
-    /* height: 640px; */
     display: block;
   }
 
   .banner-des-conatiner {
     position: absolute;
-    bottom: 7%;
+    bottom: 10%;
     left: 6%;
     width: 322px;
   }
@@ -1150,12 +1134,12 @@ html {
     width: 100%;
   }
   .tour-filter button {
-    padding: 10px 30px;
-    font-size: 15px;
+    padding: 10px 21px;
+    font-size: 14px;
   }
   .tour-filter {
-    gap: 16px;
-    margin: 38px 0px 37px 0px;
+    gap: 11px;
+    margin: 0px 0px 29px 0px;
     justify-content: center;
   }
   .banner-image {
@@ -1231,6 +1215,13 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  .curtain__wrapper input[type="checkbox"]:checked ~ div.curtain__panel--left {
+    transform: translateX(0);
+  }
+  .scroll-arrow {
+    position: absolute;
+    bottom: 1%;
   }
 }
 /* responsive end */
