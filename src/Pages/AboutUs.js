@@ -47,28 +47,28 @@ function AboutUs(){
                         <div className="aboutus-client-conatiner">
                             <div className="aboutus-client-folder">
                                 <div className="aboutus-client-numbers">
-                                    <a href="#"><i class="fa-solid fa-chart-line"></i></a>
+                                    <a href="#"><i className="fa-solid fa-chart-line"></i></a>
                                     <span>7652</span>
                                 </div>
                                 <h2>Completed Projects</h2>
                             </div>
                             <div className="aboutus-client-folder">
                                 <div className="aboutus-client-numbers">
-                                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                                    <a href="#"><i className="fa-solid fa-user"></i></a>
                                     <span>7652</span>
                                 </div>
                                 <h2>Happy Clients</h2>
                             </div>
                             <div className="aboutus-client-folder">
                                 <div className="aboutus-client-numbers">
-                                    <a href="#"><i class="fa-solid fa-headphones"></i></a>
+                                    <a href="#"><i className="fa-solid fa-headphones"></i></a>
                                     <span>7652</span>
                                 </div>
                                 <h2>Questions Answered</h2>
                             </div>
                             <div className="aboutus-client-folder">
                                 <div className="aboutus-client-numbers">
-                                    <a href="#"><i class="fa-sharp fa-solid fa-trophy"></i></a>
+                                    <a href="#"><i className="fa-sharp fa-solid fa-trophy"></i></a>
                                     <span>7652</span>
                                 </div>
                                 <h2>Awards's</h2>

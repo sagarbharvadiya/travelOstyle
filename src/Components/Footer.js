@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Footer(){
-    return(
+function Footer() {
+    return (
         <>
             <div className="footer-section">
                 <div className="footer-wrapper">
@@ -11,11 +11,11 @@ function Footer(){
                         <h2>Get Inspired to The Collaboration</h2>
                         <div className="Get-Inspired-call-folder">
                             <div className="call-folder">
-                                <a href="#"><i class="fa-solid fa-phone"></i></a>
+                                <a href="#"><i className="fa-solid fa-phone"></i></a>
                                 <a href="#" className="call-btn">9987547773</a>
                             </div>
                             <div className="Appointment-folder">
-                                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="#"><i className="fa-solid fa-arrow-right"></i></a>
                                 <a href="#" className="Appointment-btn">Appointment</a>
                             </div>
                         </div>
@@ -25,12 +25,12 @@ function Footer(){
                             <div className="footer-folder1">
                                 <h2>Travleostyle</h2>
                                 <p>internatios is international, non profit, professional organization founded
-                                   by a group
+                                    by a group
                                 </p>
                                 <div className="footer-iocn">
-                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                                    <a href="#"><i className="fa-brands fa-facebook"></i></a>
+                                    <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                                    <a href="#"><i className="fa-brands fa-twitter"></i></a>
                                 </div>
                             </div>
                             <div className="footer-folder2">
@@ -55,7 +55,7 @@ function Footer(){
                                 <a href="#">Pricing</a>
                             </div>
                         </div>
-                        <span>Copyright @ 2023 | <NavLink to="/basicpage/termsCondition">Terms and conditions</NavLink> | <NavLink to="/basicpage/privacyPolicy">Privacy Policy</NavLink> | <NavLink to="/basicpage/refundPolicy">Refund Policy</NavLink></span>
+                        <span>Copyright @ 2023 | <NavLink to="/basicpage/terms-and-conditions">Terms and conditions</NavLink> | <NavLink to="/basicpage/privac-policy">Privacy Policy</NavLink> | <NavLink to="/basicpage/refund-policy">Refund Policy</NavLink></span>
                     </div>
                 </div>
             </div>

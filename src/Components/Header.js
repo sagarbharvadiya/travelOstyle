@@ -16,7 +16,7 @@ function Header(){
                     </div>
                     <ul onClick={toggleModal} className="menu">
                         <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="AboutUs">About Us</NavLink></li>
+                        <li><NavLink to="/basicpage/about-us">About Us</NavLink></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
@@ -31,7 +31,7 @@ function Header(){
                     </div>
                     <ul onClick={toggleModal} className="menu-folder">
                         <li><NavLink to="/">Home</NavLink></li>
-                        <li><NavLink to="AboutUs">About Us</NavLink></li>
+                        <li><NavLink to="/basicpage/about-us">About Us</NavLink></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
