@@ -48,22 +48,22 @@ const BasicPage = () => {
                         },
                     });
                     return (
-                        <React.Fragment key={id}>
-                            <div className="about_us about_ta">
-                                <div className="about_us_wrapper">
-                                    <h2>{title}</h2>
-                                </div>
-                                <div className="aboutus_parent">
-                                    <div className="about_us_img">
-                                        <img src={imageUrl} alt={imageUrl.title} />
-                                        <h3>{subTitle}</h3>
+                    <React.Fragment key={id}>
+                        <div className="terms-condition-section">
+                            <div className="terms-condition-wrapper">
+                                <div className="terms-condition-banner">
+                                    <div className="terms-condition-banner-image">
+                                        <img src={imageUrl} alt={imageUrl.title}/>
                                     </div>
-                                    <div className="about_us_content">
-                                        {richTextContent}
-                                    </div>
+                                    <h2 className="terms-condition-banner-image-title">{title}</h2>
                                 </div>
-                            </div>       
-                        </React.Fragment>
+                                <div className="terms-condition-text-container">
+                                    <h2 className="terms-condition-title">{subTitle}</h2>
+                                    <p>{richTextContent}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </React.Fragment>
                     )
                 })
             } 
