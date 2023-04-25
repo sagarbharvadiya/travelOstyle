@@ -80,7 +80,7 @@
   width: 50%;
 }
 .day-info ul {
-  list-style-type: none;
+  list-style-type: square;
 }
 .place-img {
   width: 50%;
