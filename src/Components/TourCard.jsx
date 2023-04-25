@@ -52,6 +52,15 @@ const TourCard = () => {
 
   const [entry, setEntry] = useState([]);
 
+  const [selectedFilter, setSelectedFilter] = useState("All");
+
+  const filteredData = entry.filter((item) => {
+    if (selectedFilter === 'All') {
+      return true;
+    } else {
+      return item.fields.packageTitle === selectedFilter;
+    }
+  });
   useEffect(() => {
     const fetchPage = async () => {
       try {
@@ -74,16 +83,23 @@ const TourCard = () => {
     <div className="Tour-section" id="scroll-down">
       <h2>Packages</h2>
       <div className="tour-filter">
-        <button>All</button>
-        <button>Europe</button>
-        <button>US</button>
-        <button>Canada</button>
+        <div className="tour-filter">
+          <button onClick={() => setSelectedFilter('All')} className={selectedFilter === 'All' ? 'active' : ''}>All</button>
+          <button onClick={() => setSelectedFilter('Europe')} className={selectedFilter === 'Europe' ? 'active' : ''}>Europe</button>
+          <button onClick={() => setSelectedFilter('US')} className={selectedFilter === 'US' ? 'active' : ''}>US</button>
+          <button onClick={() => setSelectedFilter('ENGLAND')} className={selectedFilter === 'ENGLAND' ? 'active' : ''}>ENGLAND</button>
+          <button onClick={() => setSelectedFilter('Japan')} className={selectedFilter === 'Japan' ? 'active' : ''}>Japan</button>
+          <button onClick={() => setSelectedFilter('COSTA  RICA')} className={selectedFilter === 'COSTA  RICA' ? 'active' : ''}>COSTA  RICA</button>
+          <button onClick={() => setSelectedFilter('Australia')} className={selectedFilter === 'Australia' ? 'active' : ''}>Australia</button>
+        </div>
       </div>
       <div className="container">
-        <Slider {...settings}>
-          {entry.map((item) => {
+        <Slider
+          {...settings}
+         >
+          {filteredData.map((item) => {
             const { slug, packageTitle, packageStartingPrice } = item.fields;
-            const id = item.fields.sys
+            const id = item.fields.sys;
             return (
               <div className="card-wrapper" key={id}>
                 <img src={card_image1} alt="image1" className="img-div" />
@@ -107,11 +123,16 @@ const TourCard = () => {
                 </div>
               </div>
             );
-          })}          
+          })}
         </Slider>
       </div>
-    </div>
+    </div >
   );
 };
 
 export default TourCard;
+
+
+
+
+
