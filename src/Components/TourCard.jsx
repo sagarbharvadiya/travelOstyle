@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { ImLocation2 } from "react-icons/im";
 import card_image1 from "../images/card-image1.webp";
 import { Link } from "react-router-dom";
+import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import client from "../Client";
 
 const TourCard = () => {
@@ -96,14 +97,17 @@ const TourCard = () => {
         </div>
       </div>
       <div className="container">
-        <Slider ref={sliderRef} {...settings}
-         >
+        <Slider
+          {...settings}
+        >
           {filteredData.map((item) => {
-            const { slug, packageTitle, packageStartingPrice } = item.fields;
+            const { slug, packageTitle, packageStartingPrice, exclusions } = item.fields;
+            const richTextContent = documentToReactComponents(exclusions)
+            const imageUrl = (item?.fields?.packageBanner?.fields?.file?.url) ? item?.fields?.packageBanner?.fields?.file?.url : '';
             const id = item.fields.sys;
             return (
               <div className="card-wrapper" key={id}>
-                <img src={card_image1} alt="image1" className="img-div" />
+                <img src={imageUrl} alt="image1" className="img-div" />
                 <div className="card-details">
                   <div className="travel-info">
                     <div className="travel-place">
@@ -115,8 +119,9 @@ const TourCard = () => {
                     <span className="card-price">${packageStartingPrice}</span>
                   </div>
                   <p className="card-des">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Quod harum magni tenetur
+                    {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quod harum magni tenetur */}
+                    {richTextContent}
                   </p>
                   <Link to={`/tour-details/${slug}`} className="card-btn">
                     Details

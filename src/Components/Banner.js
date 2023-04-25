@@ -6,10 +6,9 @@ import banner_video from "../assets/video/pexels.mp4"
 // import ReactCurtain from "./ReactCurtain";
 
 function Banner() {
+  const [checked, setChecked] = useState(true);
 
-    const [checked, setChecked] = useState(true);
-
-    const [entry, setEntry] = useState([]);
+  const [entry, setEntry] = useState([]);
 
     useEffect(() => {
         const fetchPage = async () => {
