@@ -24,7 +24,7 @@ function Header(){
                 </div>
             </div>
         )}
-        <div className="top-header-section-folder">
+            <div className="top-header-section-folder">
                 <div className="top-header-wrapper-folder">
                     <div className="logo-folder">
                         <h2>Travleostyle</h2>

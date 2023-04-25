@@ -55,7 +55,7 @@ function Footer(){
                                 <a href="#">Pricing</a>
                             </div>
                         </div>
-                        <span>Copyright @ 2023 | <NavLink to="TermsCondition">Terms and conditions</NavLink> | <NavLink to="PrivacyPolicy">Privacy Policy</NavLink> | <NavLink to="RefundPolicy">Refund Policy</NavLink></span>
+                        <span>Copyright @ 2023 | <NavLink to="/basicpage/termsCondition">Terms and conditions</NavLink> | <NavLink to="/basicpage/privacyPolicy">Privacy Policy</NavLink> | <NavLink to="/basicpage/refundPolicy">Refund Policy</NavLink></span>
                     </div>
                 </div>
             </div>
