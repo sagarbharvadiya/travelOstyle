@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import "./css/aos.css";
 import { Routes, Route } from "react-router-dom";
 import TourcardDetails from "./Pages/TourcardDetails";
 import Home from "./Pages/Home";
