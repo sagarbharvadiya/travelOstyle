@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Slider from "react-slick";
 import { ImLocation2 } from "react-icons/im";
 import card_image1 from "../images/card-image1.webp";
@@ -11,6 +11,7 @@ const TourCard = () => {
     arrows: true,
     infinite: true,
     speed: 500,
+    initialSlide: 0,
     autoplay: false,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -54,6 +55,7 @@ const TourCard = () => {
 
   const [selectedFilter, setSelectedFilter] = useState("All");
 
+  const sliderRef = useRef(null);
   const filteredData = entry.filter((item) => {
     if (selectedFilter === 'All') {
       return true;
@@ -87,15 +89,14 @@ const TourCard = () => {
           <button onClick={() => setSelectedFilter('All')} className={selectedFilter === 'All' ? 'active' : ''}>All</button>
           <button onClick={() => setSelectedFilter('Europe')} className={selectedFilter === 'Europe' ? 'active' : ''}>Europe</button>
           <button onClick={() => setSelectedFilter('US')} className={selectedFilter === 'US' ? 'active' : ''}>US</button>
-          <button onClick={() => setSelectedFilter('ENGLAND')} className={selectedFilter === 'ENGLAND' ? 'active' : ''}>ENGLAND</button>
+          <button onClick={() => setSelectedFilter('England')} className={selectedFilter === 'England' ? 'active' : ''}>England</button>
           <button onClick={() => setSelectedFilter('Japan')} className={selectedFilter === 'Japan' ? 'active' : ''}>Japan</button>
-          <button onClick={() => setSelectedFilter('COSTA  RICA')} className={selectedFilter === 'COSTA  RICA' ? 'active' : ''}>COSTA  RICA</button>
+          <button onClick={() => setSelectedFilter('Costa Rica')} className={selectedFilter === 'Costa Rica' ? 'active' : ''}>Costa Rica</button>
           <button onClick={() => setSelectedFilter('Australia')} className={selectedFilter === 'Australia' ? 'active' : ''}>Australia</button>
         </div>
       </div>
       <div className="container">
-        <Slider
-          {...settings}
+        <Slider ref={sliderRef} {...settings}
          >
           {filteredData.map((item) => {
             const { slug, packageTitle, packageStartingPrice } = item.fields;
@@ -126,7 +127,7 @@ const TourCard = () => {
           })}
         </Slider>
       </div>
-    </div >
+    </div>
   );
 };
 

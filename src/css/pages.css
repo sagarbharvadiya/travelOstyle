@@ -4,8 +4,8 @@
 .page-container {
   display: flex;
   flex-direction: column;
-  align-items: unset;
-  margin: 4rem;
+  max-width: 1152px;
+  margin: 100px auto 0px auto;
 }
 .banner2 {
   width: 100%;

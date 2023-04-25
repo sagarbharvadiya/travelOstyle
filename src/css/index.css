@@ -450,7 +450,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 22px;
-  margin: 30px 0px 37px 10px;
+  margin: 12px 0px 20px 10px;
 }
 .tour-filter button {
   padding: 9px 32px;
@@ -899,8 +899,20 @@ html {
 .banner-mobile {
   display: none;
 }
+.page-costa-rica-entry-r-equirements .logo-folder h2 , 
+.page-costa-rica-entry-r-equirements .menu-folder li a{
+  color: black;
+}
 
 /* responsive start */
+@media only screen and (min-width: 1400px){
+  .banner-title {
+    transform: translateY(-95px) !important;
+  }
+  .Tour-section {
+    padding: 20px 0px 50px 0px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .top-header-section {
     position: fixed;
@@ -953,7 +965,7 @@ html {
   .banner-title {
     font-size: 60px;
     width: 179px;
-    transform: translateY(72px);
+    transform: translateY(50px) !important;
     font-weight: 900;
     background-clip: text;
     -webkit-text-fill-color: white;
@@ -963,7 +975,7 @@ html {
     font-size: 61px;
     width: 82px;
     transform: translateY(0px) !important;
-    margin-left: -59px;
+    margin-left: 9px;
     font-weight: 900;
   }
 
@@ -979,12 +991,19 @@ html {
   .banner-right-section {
     width: 49%;
     transform: translateY(-79px);
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
   }
-
+  .curtain__wrapper input[type="checkbox"]{
+    display: none;
+  }
+  .banner-right-image {
+    position: absolute;
+    top: 33.6%;
+    left: 20%;
+  }
   .banner-right-image img {
     width: 144px;
-    transform: translateY(-113px) !important;
-    margin-left: -76px;
   }
 
   .banner-image img {
@@ -996,7 +1015,7 @@ html {
 
   .banner-des-conatiner {
     position: absolute;
-    bottom: 7%;
+    bottom: 10%;
     left: 6%;
     width: 322px;
   }
@@ -1150,12 +1169,12 @@ html {
     width: 100%;
   }
   .tour-filter button {
-    padding: 10px 30px;
-    font-size: 15px;
+    padding: 10px 21px;
+    font-size: 14px;
   }
   .tour-filter {
-    gap: 16px;
-    margin: 38px 0px 37px 0px;
+    gap: 11px;
+    margin: 0px 0px 29px 0px;
     justify-content: center;
   }
   .banner-image {
@@ -1231,6 +1250,13 @@ html {
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  .curtain__wrapper input[type="checkbox"]:checked ~ div.curtain__panel--left {
+    transform: translateX(0);
+  }
+  .scroll-arrow {
+    position: absolute;
+    bottom: 1%;
   }
 }
 /* responsive end */
