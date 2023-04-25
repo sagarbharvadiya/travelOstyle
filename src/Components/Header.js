@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Header(){
     const [modal, sertModal] = useState(false);
@@ -14,24 +15,24 @@ function Header(){
                         <h2>Travleostyle</h2>
                     </div>
                     <ul onClick={toggleModal} className="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Servives</a></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="AboutUs">About Us</NavLink></li>
+                        <li><a href="#">Services</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
         )}
-        <div className="top-header-section-folder">
+            <div className="top-header-section-folder">
                 <div className="top-header-wrapper-folder">
                     <div className="logo-folder">
                         <h2>Travleostyle</h2>
                     </div>
                     <ul onClick={toggleModal} className="menu-folder">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Servives</a></li>
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="AboutUs">About Us</NavLink></li>
+                        <li><a href="#">Services</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
