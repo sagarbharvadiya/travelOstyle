@@ -865,10 +865,6 @@ html {
 .banner-mobile {
   display: none;
 }
-.page-costa-rica-entry-r-equirements .logo-folder h2 , 
-.page-costa-rica-entry-r-equirements .menu-folder li a{
-  color: black !important;
-}
 
 /* responsive start */
 @media only screen and (min-width: 1400px){
@@ -1096,8 +1092,10 @@ html {
     margin-top: 16px;
   }
   .about_us {
-    width: 366px;
+    width: 100%;
     margin: 0px auto;
+    height: 665px;
+    max-height: 100%;
   }
   .about_us_right {
     margin-top: 29px;
@@ -1132,6 +1130,8 @@ html {
   }
   .about_us_left {
     width: 100%;
+    padding: 33px 10px;
+    top: 100%;
   }
   .tour-filter button {
     padding: 10px 21px;
@@ -1222,6 +1222,9 @@ html {
   .scroll-arrow {
     position: absolute;
     bottom: 1%;
+  }
+  .card-wrapper{
+    width: 100% !important;
   }
 }
 /* responsive end */
