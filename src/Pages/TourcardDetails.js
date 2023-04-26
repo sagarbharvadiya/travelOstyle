@@ -107,19 +107,19 @@ const TourcardDetails = () => {
                               <div className="day-info">
                                 <h4>{placeName}</h4>
                                 <div className="tour-details-star-folder">
-                                  <a href="#">
+                                  <a href="/">
                                     <i class="fa-solid fa-star"></i>
                                   </a>
-                                  <a href="#">
+                                  <a href="/">
                                     <i class="fa-solid fa-star"></i>
                                   </a>
-                                  <a href="#">
+                                  <a href="/">
                                     <i class="fa-solid fa-star"></i>
                                   </a>
-                                  <a href="#">
+                                  <a href="/">
                                     <i class="fa-solid fa-star"></i>
                                   </a>
-                                  <a href="#">
+                                  <a href="/">
                                     <i class="fa-solid fa-star"></i>
                                   </a>
                                 </div>
