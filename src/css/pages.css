@@ -84,9 +84,7 @@
   padding: 6px 15px;
   font-size: 13px;
   border-radius: 7px;
-
-  list-style-type: square;
-
+  list-style: none;
 }
 .place-img {
   width: 50%;
