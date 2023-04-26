@@ -865,10 +865,6 @@ html {
 .banner-mobile {
   display: none;
 }
-.page-costa-rica-entry-r-equirements .logo-folder h2 , 
-.page-costa-rica-entry-r-equirements .menu-folder li a{
-  color: black !important;
-}
 
 /* responsive start */
 @media only screen and (min-width: 1400px){

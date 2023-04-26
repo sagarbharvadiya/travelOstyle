@@ -40,25 +40,27 @@ const TourcardDetails = () => {
                   <div className="card-details">
                     <h1>{packageTitle}</h1>
                     <span>$ {packageStartingPrice}</span>
-                    <img
-                      className="content-img"
-                      src={detailImg}
-                      alt="man-standing-besides-church"
-                    />
-                    <h2 className="content-heading">About Itinerary</h2>
-                    <p className="content-info">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout. The point of using Lorem Ipsum is that it
-                      has a more-or-less normal distribution of letters, as
-                      opposed to using 'Content here, content here', making it
-                      look like readable English. Many desktop publishing
-                      packages and web page editors now use Lorem Ipsum as their
-                      default model text, and a search for 'lorem ipsum' will
-                      uncover many web sites still in their infancy.
-                    </p>
-                    <button className="tour-book-btn">Book Now</button>
-                    <button className="tour-query-btn">Submit Query</button>
+                    <div className="tour-card-folder">
+                      <div className="tour-card-left-folder">
+                        <img className="content-img" src={detailImg} alt="man-standing-besides-church"/>
+                      </div>
+                      <div className="tour-card-right-folder">
+                        <h2 className="content-heading">About Itinerary</h2>
+                        <p className="content-info">
+                          It is a long established fact that a reader will be
+                          distracted by the readable content of a page when looking
+                          at its layout. The point of using Lorem Ipsum is that it
+                          has a more-or-less normal distribution of letters, as
+                          opposed to using 'Content here, content here', making it
+                          look like readable English. Many desktop publishing
+                          packages and web page editors now use Lorem Ipsum as their
+                          default model text, and a search for 'lorem ipsum' will
+                          uncover many web sites still in their infancy.
+                        </p>
+                        <button className="tour-book-btn">Book Now</button>
+                        <button className="tour-query-btn">Submit Query</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
