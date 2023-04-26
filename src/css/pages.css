@@ -12,7 +12,7 @@
   height: 410px;
 }
 .content-img {
-  width: 770px;
+  width: 100%;
   height: 460px;
 }
 .content-info {
@@ -20,22 +20,24 @@
   text-align: justify;
 }
 .tour-book-btn {
-  width: 200px;
+  width: 159px;
   color: white;
-  height: 30px;
+  height: 42px;
   background: #137deb;
   border: none;
   margin-bottom: 5px;
   cursor: pointer;
+  font-size: 17px;
 }
 .tour-query-btn {
-  width: 200px;
+  width: 159px;
   color: white;
-  height: 30px;
-  background: #282a3c;
+  height: 42px;
+  background-color: #282a3c;
   border: none;
   margin-bottom: 5px;
   cursor: pointer;
+  font-size: 17px;
 }
 .timeline-div {
   display: flex;
@@ -110,5 +112,13 @@
 }
 .tour-details-star-folder{
   margin: 6px 0px 7px 0px;
+}
+.card-details-folder{
+  display: flex;
+  gap: 25px;
+}
+.card-details-booking-btn{
+  display: flex;
+  gap: 15px;
 }
 
