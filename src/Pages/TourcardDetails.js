@@ -63,6 +63,20 @@ const TourcardDetails = () => {
                       <button className="tour-query-btn">Submit Query</button>
                     </div>
                   </div>
+
+                  <div className="tour-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.288961634382!2d-0.0903025740590879!3d51.50791446066668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876035159bb13c5%3A0xa61e28267c3563ac!2sLondon%20Bridge!5e0!3m2!1sen!2sin!4v1681972116941!5m2!1sen!2sin"
+                      width="100%"
+                      height="400"
+                      style={{ border: 0 }}
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="london bridge"
+                    ></iframe>
+                  </div>
+
                   <div className="timeline-container">
                     {itineraries &&
                       itineraries.map((itenary, index) => {
@@ -97,6 +111,23 @@ const TourcardDetails = () => {
                               <div className="day-details-box">
                                 <div className="day-info">
                                   <h4>{placeName}</h4>
+                                  <div className="tour-details-star-folder">
+                                    <a href="#">
+                                      <i class="fa-solid fa-star"></i>
+                                    </a>
+                                    <a href="#">
+                                      <i class="fa-solid fa-star"></i>
+                                    </a>
+                                    <a href="#">
+                                      <i class="fa-solid fa-star"></i>
+                                    </a>
+                                    <a href="#">
+                                      <i class="fa-solid fa-star"></i>
+                                    </a>
+                                    <a href="#">
+                                      <i class="fa-solid fa-star"></i>
+                                    </a>
+                                  </div>
                                   {description.content.map((desc, index1) => {
                                     return <p>{desc.content[0].value}</p>;
                                   })}
