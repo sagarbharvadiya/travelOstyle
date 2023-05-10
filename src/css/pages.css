@@ -1,24 +1,39 @@
 .detail-page-banner-img {
   max-width: 100%;
 }
+
+.page- .page-container {
+  margin: 100px auto 50px auto;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
   max-width: 1152px;
-  margin: 100px auto 50px auto;
+  margin: 0px auto 50px auto;
 }
+
 .banner2 {
   width: 100%;
   height: 410px;
 }
+
 .content-img {
-  width: 770px;
-  height: 460px;
+  width: 100%;
+  height: 300px;
 }
+
 .content-info {
-  width: 900px;
+  width: 100%;
+  padding: 20px 0;
   text-align: justify;
 }
+
+.card-details .btn {
+  display: flex;
+  gap: 25px;
+}
+
 .tour-book-btn {
   width: 200px;
   color: white;
@@ -28,6 +43,7 @@
   margin-bottom: 5px;
   cursor: pointer;
 }
+
 .tour-query-btn {
   width: 200px;
   color: white;
@@ -37,19 +53,23 @@
   margin-bottom: 5px;
   cursor: pointer;
 }
+
 .timeline-div {
   display: flex;
   flex-direction: row;
   max-width: 1250px;
   margin: 48px 0px 0px 0px;
 }
+
 .timeline-left-div {
   width: 17%;
 }
+
 .sticky-top {
   position: sticky;
   top: 13%;
 }
+
 .day-details-btn {
   border-radius: 4px;
   color: #fff;
@@ -60,9 +80,11 @@
   display: block;
   width: 142px;
 }
+
 .timeline-right-div {
   width: 83%;
 }
+
 .day-details-box {
   display: flex;
   border: 1px solid #cee5f5;
@@ -70,16 +92,19 @@
   padding: 23px;
   border-radius: 9px;
 }
+
 .day-info {
   width: 50%;
 }
+
 .day-info ul {
 
   list-style-type: none;
   display: flex;
   gap: 20px;
 }
-.day-info ul li{
+
+.day-info ul li {
   border: 1px solid;
   padding: 6px 15px;
   font-size: 13px;
@@ -88,29 +113,101 @@
   list-style-type: square;
 
 }
+
 .place-img {
   width: 50%;
 }
+
 .place-img img {
   width: 100%;
   height: 315px;
   display: block;
 }
-.day-info h4{
+
+.day-info h4 {
   font-size: 24px;
   font-weight: bold;
 }
+
 .day-info p {
   font-size: 14px;
   line-height: 26px;
   margin: 6px 0px 16px 0px;
   max-width: 440px;
 }
+
 .tour-details-star-folder a {
   color: #ff9600;
   font-size: 15px;
 }
-.tour-details-star-folder{
+
+.tour-details-star-folder {
   margin: 6px 0px 7px 0px;
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tour-query-btn {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+button[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
