@@ -103,8 +103,8 @@ const TourCard = () => {
           {...settings}
         >
           {filteredData.map((item) => {
-            const { slug, packageTitle, packageStartingPrice, exclusions } = item.fields;
-            const richTextContent = documentToReactComponents(exclusions)
+            const { slug, packageTitle, packageStartingPrice, exclusions,description } = item.fields;
+            const richTextContent = documentToReactComponents(description)
             const imageUrl = (item?.fields?.packageBanner?.fields?.file?.url) ? item?.fields?.packageBanner?.fields?.file?.url : '';
             const id = item.fields.sys;
             return (

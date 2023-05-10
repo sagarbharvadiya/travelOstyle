@@ -148,5 +148,4 @@ const TourcardDetails = () => {
     </div>
   );
 };
-
 export default TourcardDetails;
