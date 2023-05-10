@@ -55,15 +55,14 @@ const TourCard = () => {
   const [entry, setEntry] = useState([]);
 
   const [selectedFilter, setSelectedFilter] = useState("All");
-
-  const sliderRef = useRef(null);
   const filteredData = entry.filter((item) => {
     if (selectedFilter === 'All') {
       return true;
     } else {
-      return item.fields.packageTitle === selectedFilter;
+      return item.fields.countryRegion === selectedFilter;
     }
   });
+  const countryRegions = [...new Set(entry.map((item) => item.fields.countryRegion))];
   useEffect(() => {
     const fetchPage = async () => {
       try {
@@ -88,12 +87,15 @@ const TourCard = () => {
       <div className="tour-filter">
         <div className="tour-filter">
           <button onClick={() => setSelectedFilter('All')} className={selectedFilter === 'All' ? 'active' : ''}>All</button>
-          <button onClick={() => setSelectedFilter('Europe')} className={selectedFilter === 'Europe' ? 'active' : ''}>Europe</button>
-          <button onClick={() => setSelectedFilter('US')} className={selectedFilter === 'US' ? 'active' : ''}>US</button>
-          <button onClick={() => setSelectedFilter('England')} className={selectedFilter === 'England' ? 'active' : ''}>England</button>
-          <button onClick={() => setSelectedFilter('Japan')} className={selectedFilter === 'Japan' ? 'active' : ''}>Japan</button>
-          <button onClick={() => setSelectedFilter('Costa Rica')} className={selectedFilter === 'Costa Rica' ? 'active' : ''}>Costa Rica</button>
-          <button onClick={() => setSelectedFilter('Australia')} className={selectedFilter === 'Australia' ? 'active' : ''}>Australia</button>
+          {countryRegions.map((region) => (
+            <button
+              key={region}
+              onClick={() => setSelectedFilter(region)}
+              className={selectedFilter === region ? "active" : ""}
+            >
+              {region}
+            </button>
+          ))}
         </div>
       </div>
       <div className="container">
