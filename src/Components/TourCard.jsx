@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState} from "react";
 import Slider from "react-slick";
 import { ImLocation2 } from "react-icons/im";
-import card_image1 from "../images/card-image1.webp";
+
 import { Link } from "react-router-dom";
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import client from "../Client";
@@ -63,6 +63,7 @@ const TourCard = () => {
     }
   });
   const countryRegions = [...new Set(entry.map((item) => item.fields.countryRegion))];
+  countryRegions.sort(); // sort alphabetically
   useEffect(() => {
     const fetchPage = async () => {
       try {
@@ -87,6 +88,7 @@ const TourCard = () => {
       <div className="tour-filter">
         <div className="tour-filter">
           <button onClick={() => setSelectedFilter('All')} className={selectedFilter === 'All' ? 'active' : ''}>All</button>
+
           {countryRegions.map((region) => (
             <button
               key={region}
@@ -118,7 +120,9 @@ const TourCard = () => {
                         <ImLocation2 /> Europe
                       </p>
                     </div>
-                    <span className="card-price">${packageStartingPrice}</span>
+                    <div className="price">
+                      <span className="card-price">${packageStartingPrice}</span>
+                    </div>
                   </div>
                   <p className="card-des">
                     {/* Lorem ipsum, dolor sit amet consectetur adipisicing elit.
