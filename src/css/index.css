@@ -981,7 +981,6 @@ html {
 .banner_title {
   position: absolute;
   top: 38%;
-  right: 42%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -989,6 +988,8 @@ html {
   align-items: center;
   margin: auto;
   gap: 20px;
+  left: 0%;
+  right: 0%;
 }
 
 .banner_title h1 {
