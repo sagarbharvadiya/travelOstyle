@@ -40,7 +40,7 @@ const TourcardDetails = () => {
               info.fields;
             const id = info.fields.sys;
             return (
-              <>
+              <React.Fragment key={id} >
                 <div className="tour-details-container" key={id}>
                   {
                     entry.map((d, i) => (
@@ -129,7 +129,7 @@ const TourcardDetails = () => {
                         const dayNum =
                           titleParts.length > 1 ? titleParts[0].trim() : "";
                         return (
-                          <div className="timeline-div">
+                          <div className="timeline-div" key={id}> 
                             <div className="timeline-left-div">
                               <div className="sticky-top">
                                 <span className="day-details-btn">{dayNum}</span>
@@ -160,7 +160,7 @@ const TourcardDetails = () => {
                       })}
                   </div>
                 </div>
-              </>
+              </React.Fragment>
             );
           })}
       </div>
