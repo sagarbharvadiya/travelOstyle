@@ -4,7 +4,7 @@ import map from '../images/map.jpg'
 import "../css/pages.css";
 import { useParams } from "react-router-dom";
 import client from "../Client";
-import {toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser"
 const TourcardDetails = () => {
@@ -14,6 +14,7 @@ const TourcardDetails = () => {
   const handleOpen = () => setIsOpen(true);
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
+  const [NewpackageTitle, SetNewpackageTitle] = useState("")
   const [message, setMessage] = useState("")
   const [isValidEmail, setIsValidEmail] = useState(false)
   const handleClose = () => setIsOpen(false);
@@ -69,6 +70,7 @@ const TourcardDetails = () => {
             setName("")
             setEmail("")
             setMessage("")
+            SetNewpackageTitle("")
           },
           error => {
             console.log(error.text)
@@ -163,6 +165,7 @@ const TourcardDetails = () => {
                             <h1>{packageTitle}</h1>
                             <span>$ {packageStartingPrice}</span>
                             <form ref={form} action="" onSubmit={sendEmail}>
+                              <input type="text" value={packageTitle} onChange={NewpackageTitle} hidden />
                               <label htmlFor="name">Name:</label>
                               <input type="text" id="name" name="name" value={name} onChange={NameinputChange} required />
                               <label htmlFor="email">Email:</label>
