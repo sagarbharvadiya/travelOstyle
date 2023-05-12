@@ -1,18 +1,84 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import placeImg from "../images/londonbridge.jpg";
 import map from '../images/map.jpg'
 import "../css/pages.css";
 import { useParams } from "react-router-dom";
 import client from "../Client";
+import {toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser"
 const TourcardDetails = () => {
   const { slug } = useParams();
   const [entry, setEntry] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const handleOpen = () => setIsOpen(true);
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
+  const [isValidEmail, setIsValidEmail] = useState(false)
   const handleClose = () => setIsOpen(false);
   function handleButtonClick() {
     window.location.href = 'mailto:norepay@gmail.com';
   }
+
+  const notify = () => {
+    toast.success("Your Request has been sent😊", {
+      position: "top-right",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
+
+  function handleEmailChange(event) {
+    const inputEmail = event.target.value
+    setEmail(inputEmail)
+
+    const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/
+    setIsValidEmail(emailRegex.test(inputEmail))
+  }
+
+  function NameinputChange(e) {
+    const inputText = e.target.value
+    setName(inputText)
+  }
+
+  function MessageInputChange(e) {
+    const inputText = e.target.value
+    setMessage(inputText)
+  }
+  const form = useRef()
+  const sendEmail = e => {
+    e.preventDefault()
+    if (isValidEmail) {
+      emailjs
+        .sendForm(
+          "service_9spedfi",
+          "template_juxtdiw",
+          form.current,
+          "JEUgk1jZnrZLqJz5k",
+        )
+        .then(
+          result => {
+            notify()
+            console.log(result.text)
+            setName("")
+            setEmail("")
+            setMessage("")
+          },
+          error => {
+            console.log(error.text)
+          }
+        )
+    } else {
+      console.log("Email is invalide")
+    }
+  }
+
   useEffect(() => {
     const fetchdetailsPage = async () => {
       try {
@@ -54,22 +120,22 @@ const TourcardDetails = () => {
                 </div>
                 <div className="page-container">
                   <div className="box_wrapper">
-                  <div className="box_item">
-                       <h4></h4>
+                    <div className="box_item">
+                      <h4></h4>
                       <p></p>
                     </div>
                     <div className="box_item">
-                     <h4>${packageStartingPrice}</h4>
-                    <p>Starting Price</p>  
+                      <h4>${packageStartingPrice}</h4>
+                      <p>Starting Price</p>
                     </div>
 
                     <div className="box_item">
-                     <h4>10</h4>
-                    <p> Days </p>
+                      <h4>10</h4>
+                      <p> Days </p>
                     </div>
                     <div className="box_item">
-                     <h4></h4>
-                    <p></p>
+                      <h4></h4>
+                      <p></p>
                     </div>
                   </div>
                   <div className="card-details">
@@ -96,13 +162,16 @@ const TourcardDetails = () => {
                             </button>
                             <h1>{packageTitle}</h1>
                             <span>$ {packageStartingPrice}</span>
-                            <form>
+                            <form ref={form} action="" onSubmit={sendEmail}>
                               <label htmlFor="name">Name:</label>
-                              <input type="text" id="name" name="name" required />
+                              <input type="text" id="name" name="name" value={name} onChange={NameinputChange} required />
                               <label htmlFor="email">Email:</label>
-                              <input type="email" id="email" name="email" required />
+                              <input type="email" id="email" name="email" value={email}
+                                onChange={handleEmailChange} required />
                               <label htmlFor="message">Message:</label>
-                              <textarea id="message" name="message" required></textarea>
+                              <textarea id="message" value={message}
+                                name="message"
+                                onChange={MessageInputChange} required></textarea>
                               <button type="submit">Submit</button>
                             </form>
                           </div>
@@ -110,7 +179,6 @@ const TourcardDetails = () => {
                       )}
                     </div>
                   </div>
-
                   <div className="tour-map">
                     <img src={map} alt="map"></img>
                   </div>
@@ -129,7 +197,7 @@ const TourcardDetails = () => {
                         const dayNum =
                           titleParts.length > 1 ? titleParts[0].trim() : "";
                         return (
-                          <div className="timeline-div" key={id}> 
+                          <div className="timeline-div" key={id}>
                             <div className="timeline-left-div">
                               <div className="sticky-top">
                                 <span className="day-details-btn">{dayNum}</span>

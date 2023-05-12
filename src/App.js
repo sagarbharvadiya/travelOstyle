@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Routes, Route } from "react-router-dom";
+import { ToastContainer} from "react-toastify";
 import TourcardDetails from "./Pages/TourcardDetails";
 import Home from "./Pages/Home";
 import Header from "./Components/Header";
@@ -26,6 +27,18 @@ function App() {
         <Route exact path='/basicpage/:slug' element={<BasicPage />}></Route>
         <Route path="/tour-details/:slug" element={<TourcardDetails />} />
       </Routes>
+      <ToastContainer
+      position="top-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="dark"
+    />
       <Footer />
 
     </>
