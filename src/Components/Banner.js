@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
-import banner_world_image from '../images/travle3.png';
+import banner_mobile from '../images/banner-mobile-image.jpg';
+import travelImage from '../images/ezgif.com-crop (1).gif'
 import client from '../Client';
-import Aos from 'aos'
+import banner_video from "../assets/video/pexels.mp4"
+// import ReactCurtain from "./ReactCurtain";
 
-function Banner(){
+function Banner() {
+  const [checked, setChecked] = useState(true);
 
-    const [entry, setEntry] = useState([]);
+  const [entry, setEntry] = useState([]);
 
     useEffect(() => {
         const fetchPage = async () => {
@@ -23,9 +26,9 @@ function Banner(){
             }
         };
         fetchPage();
-        Aos.init({ duration: 1500 });
+    
     }, []);
-    return(
+    return (
         <>
             {
                 entry.map((item) => {
@@ -34,16 +37,18 @@ function Banner(){
                     const id = item.sys.id
                     return (
                         <React.Fragment key={id}>
-                        <div className="banner-section">
-                            <div className="banner-wrapper">
-                                <div className="banner-container">
-                                    <div className="banner-image">
-                                        <img src={imageUrl} alt="banner-image"/>
-                                    </div>
-                                    <div className="banner-title-folder">
-                                        <div className="banner-left-section" data-aos="fade-right" data-aos-delay="900">
-                                            <h2 className="banner-title" data-aos="fade-right" data-aos-delay="1100">{leftTitle}</h2>
-                                            <div className="banner-des-conatiner" data-aos="fade-right" data-aos-delay="1700">
+                            <div className="banner-section">
+                                <div className="banner-wrapper curtain">
+                                    <div className="banner-container curtain__wrapper">
+                                        <input type="checkbox" checked={checked} onChange={() => setChecked(!checked)}/>
+                                        <video className="banner-image curtain__content" controls="controls" autoplay="autoplay" muted="muted" loop>
+                                            <source src={banner_video} type="video/mp4"/>
+                                        </video>
+                                        <div className="banner-image banner-mobile curtain__content">
+                                            <img src={banner_mobile} alt="banner-image" />                                         </div>
+                                        <div className="banner-left-section curtain__panel curtain__panel--left">
+                                            <h2 className="banner-title">{leftTitle}</h2>
+                                            <div className="banner-des-conatiner">
                                                 <div className="banner-des-folder2">
                                                     <h2>{title}</h2>
                                                     <p>{description}</p>
@@ -51,21 +56,22 @@ function Banner(){
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="banner-right-section" data-aos="fade-left" data-aos-delay="1300">
-                                            <div className="banner-right-image" data-aos="fade-down" data-aos-delay="1500">
-                                                <img src={banner_world_image}/>
-                                            </div>
-                                            
+                                        <div className="banner-right-image">
+                                            <img src={travelImage} alt=""></img>
+                                        </div>
+                                        <div className="banner-right-section curtain__panel curtain__panel--right">
                                             <h2>{rightTitle}</h2>
                                         </div>
                                     </div>
+                                    <a href="#scroll-down" className="scroll-arrow"><i className="fa-solid fa-angles-down fa-bounce"></i></a>
                                 </div>
                             </div>
-                        </div>
                         </React.Fragment>
+
                     )
                 })
             }
+           
         </>
     )
 }
